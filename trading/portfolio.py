@@ -1,5 +1,4 @@
-import json
-import os
+import json, os, math
 from datetime import datetime
 from config import STARTING_CAPITAL
 
@@ -10,88 +9,74 @@ def _load() -> dict:
     if os.path.exists(PORTFOLIO_FILE):
         with open(PORTFOLIO_FILE) as f:
             return json.load(f)
-    return {
-        "cash": STARTING_CAPITAL,
-        "positions": {},
-        "trades": [],
-        "created_at": str(datetime.now()),
-    }
+    return {"cash": STARTING_CAPITAL, "peak_value": STARTING_CAPITAL,
+            "positions": {}, "trades": [], "created_at": str(datetime.now())}
 
 
-def _save(portfolio: dict):
+def _save(p: dict):
     os.makedirs(os.path.dirname(PORTFOLIO_FILE), exist_ok=True)
     with open(PORTFOLIO_FILE, "w") as f:
-        json.dump(portfolio, f, indent=2, default=str)
+        json.dump(p, f, indent=2, default=str)
 
 
 def get_portfolio() -> dict:
-    portfolio = _load()
-    # Always persist so report can read it even with no trades
-    _save(portfolio)
-    return portfolio
+    p = _load(); _save(p); return p
 
 
-def get_total_value(portfolio: dict, current_prices: dict) -> float:
-    total = portfolio["cash"]
-    for symbol, pos in portfolio["positions"].items():
-        price = current_prices.get(symbol, pos["avg_price"])
-        total += pos["qty"] * price
-    return total
+def get_total_value(p: dict, prices: dict) -> float:
+    return p["cash"] + sum(pos["qty"] * prices.get(s, pos["avg_price"])
+                           for s, pos in p["positions"].items())
 
 
-def buy(symbol: str, qty: int, price: float) -> dict:
-    portfolio = _load()
+def buy(symbol: str, qty: int, price: float, stop: float, target: float) -> dict:
+    p = _load()
     cost = qty * price
-    if portfolio["cash"] < cost:
-        return {"ok": False, "msg": f"Insufficient cash. Need ₹{cost:.0f}, have ₹{portfolio['cash']:.0f}"}
-
-    portfolio["cash"] -= cost
-    if symbol in portfolio["positions"]:
-        pos = portfolio["positions"][symbol]
-        total_qty = pos["qty"] + qty
-        pos["avg_price"] = (pos["avg_price"] * pos["qty"] + price * qty) / total_qty
-        pos["qty"] = total_qty
+    if p["cash"] < cost:
+        return {"ok": False, "msg": f"Insufficient cash ₹{cost:.0f} > ₹{p['cash']:.0f}"}
+    p["cash"] -= cost
+    if symbol in p["positions"]:
+        pos = p["positions"][symbol]
+        total = pos["qty"] + qty
+        pos["avg_price"] = (pos["avg_price"] * pos["qty"] + price * qty) / total
+        pos["qty"] = total
     else:
-        portfolio["positions"][symbol] = {
-            "qty": qty,
-            "avg_price": price,
-            "buy_time": str(datetime.now()),
-        }
-
-    portfolio["trades"].append({
-        "action": "BUY", "symbol": symbol, "qty": qty,
-        "price": price, "total": cost, "time": str(datetime.now()),
-    })
-    _save(portfolio)
-    return {"ok": True, "msg": f"Bought {qty} shares of {symbol} @ ₹{price:.2f} (Total: ₹{cost:.2f})"}
+        p["positions"][symbol] = {"qty": qty, "avg_price": price,
+                                   "stop": stop, "target": target,
+                                   "trailing_stop": stop, "time": str(datetime.now())}
+    p["trades"].append({"action": "BUY", "symbol": symbol, "qty": qty,
+                         "price": price, "total": cost, "time": str(datetime.now())})
+    _save(p)
+    return {"ok": True, "msg": f"Bought {qty} × {symbol} @ ₹{price:.2f} | Stop ₹{stop:.2f} | Target ₹{target:.2f}"}
 
 
-def sell(symbol: str, qty: int, price: float) -> dict:
-    portfolio = _load()
-    if symbol not in portfolio["positions"]:
+def sell(symbol: str, qty: int, price: float, reason: str = "") -> dict:
+    p = _load()
+    if symbol not in p["positions"]:
         return {"ok": False, "msg": f"No position in {symbol}"}
-
-    pos = portfolio["positions"][symbol]
-    if pos["qty"] < qty:
-        return {"ok": False, "msg": f"Only have {pos['qty']} shares, tried to sell {qty}"}
-
+    pos = p["positions"][symbol]
+    qty = min(qty, pos["qty"])
     proceeds = qty * price
     pnl = (price - pos["avg_price"]) * qty
-    portfolio["cash"] += proceeds
+    p["cash"] += proceeds
     pos["qty"] -= qty
-
     if pos["qty"] == 0:
-        del portfolio["positions"][symbol]
+        del p["positions"][symbol]
+    p["trades"].append({"action": "SELL", "symbol": symbol, "qty": qty,
+                         "price": price, "total": proceeds, "pnl": round(pnl, 2),
+                         "reason": reason, "time": str(datetime.now())})
+    _save(p)
+    return {"ok": True, "msg": f"Sold {qty} × {symbol} @ ₹{price:.2f} | P&L ₹{pnl:+.2f} [{reason}]"}
 
-    portfolio["trades"].append({
-        "action": "SELL", "symbol": symbol, "qty": qty,
-        "price": price, "total": proceeds, "pnl": pnl, "time": str(datetime.now()),
-    })
-    _save(portfolio)
-    return {"ok": True, "msg": f"Sold {qty} shares of {symbol} @ ₹{price:.2f} | P&L: ₹{pnl:+.2f}"}
+
+def update_trailing_stop(symbol: str, new_stop: float):
+    p = _load()
+    if symbol in p["positions"]:
+        old = p["positions"][symbol].get("trailing_stop", 0)
+        p["positions"][symbol]["trailing_stop"] = max(old, new_stop)
+        _save(p)
 
 
 def reset():
     if os.path.exists(PORTFOLIO_FILE):
         os.remove(PORTFOLIO_FILE)
-    return _load()
+    p = _load(); _save(p); return p

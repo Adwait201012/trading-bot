@@ -1,59 +1,84 @@
-import math
-from config import MAX_POSITION_SIZE, STOP_LOSS_PCT, TARGET_PCT, MAX_OPEN_POSITIONS
-from trading.portfolio import get_portfolio, buy, sell, get_total_value
-from data.market_data import fetch_current_price
-
-
-def calc_qty(symbol: str, price: float, portfolio_value: float) -> int:
-    max_spend = portfolio_value * MAX_POSITION_SIZE
-    qty = math.floor(max_spend / price)
-    return max(1, qty)
+"""
+Paper trading execution with ATR-based stop losses, trailing stops,
+scale-in near support, and circuit-breaker integration.
+NO real money order execution.
+"""
+from config import (MAX_OPEN_POSITIONS, ATR_STOP_MULTIPLIER,
+                    ATR_TRAIL_MULTIPLIER, FIXED_TARGET_RR)
+from trading.portfolio import get_portfolio, buy, sell, update_trailing_stop, get_total_value
+from strategy.position_sizer import calculate as size_position
+from strategy.risk_manager import check_circuit_breaker, should_exit_trailing
+from data.fetcher import fetch_current_price
 
 
 def execute_signal(signal: dict) -> dict | None:
     portfolio = get_portfolio()
-    symbol = signal["symbol"]
-    action = signal["action"]
-    price = signal["price"]
+    symbol    = signal["symbol"]
+    price     = signal["price"]
+    atr       = signal["atr"]
+    action    = signal["action"]
 
-    current_prices = {s: fetch_current_price(s) or p["avg_price"]
-                      for s, p in portfolio["positions"].items()}
-    portfolio_value = get_total_value(portfolio, current_prices)
+    prices = {s: fetch_current_price(s) or p["avg_price"]
+              for s, p in portfolio["positions"].items()}
+    port_val = get_total_value(portfolio, prices)
+
+    # Circuit breaker check
+    cb = check_circuit_breaker(port_val, portfolio.get("peak_value", port_val), port_val)
+    if cb["halted"]:
+        return {"ok": False, "msg": f"CIRCUIT BREAKER: {' | '.join(cb['reasons'])}"}
 
     if action == "BUY":
         if len(portfolio["positions"]) >= MAX_OPEN_POSITIONS:
-            return {"ok": False, "msg": f"Max positions ({MAX_OPEN_POSITIONS}) reached"}
+            return {"ok": False, "msg": f"Max {MAX_OPEN_POSITIONS} positions reached"}
         if symbol in portfolio["positions"]:
             return {"ok": False, "msg": f"Already holding {symbol}"}
-        qty = calc_qty(symbol, price, portfolio_value)
-        return buy(symbol, qty, price)
+
+        sizing = size_position(port_val, price, atr)
+        stop   = price - ATR_STOP_MULTIPLIER * atr
+        target = price + FIXED_TARGET_RR * ATR_STOP_MULTIPLIER * atr
+        return buy(symbol, sizing["qty"], price, stop, target)
 
     elif action == "SELL":
         if symbol not in portfolio["positions"]:
-            return {"ok": False, "msg": f"No position in {symbol} to sell"}
+            return {"ok": False, "msg": f"No position in {symbol}"}
         qty = portfolio["positions"][symbol]["qty"]
-        return sell(symbol, qty, price)
+        return sell(symbol, qty, price, reason="signal")
 
     return None
 
 
-def check_stop_loss_targets(current_prices: dict) -> list[dict]:
+def check_exits(current_prices: dict) -> list[dict]:
+    """Check trailing stops and targets for all open positions."""
     portfolio = get_portfolio()
-    results = []
-    for symbol, pos in list(portfolio["positions"].items()):
-        current = current_prices.get(symbol)
-        if not current:
-            continue
-        avg = pos["avg_price"]
-        change_pct = (current - avg) / avg
+    results   = []
 
-        if change_pct <= -STOP_LOSS_PCT:
-            result = sell(symbol, pos["qty"], current)
-            result["reason"] = f"STOP LOSS hit ({change_pct*100:.1f}%)"
-            results.append(result)
-        elif change_pct >= TARGET_PCT:
-            result = sell(symbol, pos["qty"], current)
-            result["reason"] = f"TARGET hit ({change_pct*100:.1f}%)"
-            results.append(result)
+    for symbol, pos in list(portfolio["positions"].items()):
+        price = current_prices.get(symbol)
+        if not price:
+            continue
+
+        atr = pos.get("atr", price * 0.02)   # fallback: 2% ATR estimate
+
+        # Update trailing stop
+        new_stop = price - ATR_TRAIL_MULTIPLIER * atr
+        update_trailing_stop(symbol, new_stop)
+
+        # Re-read updated portfolio
+        portfolio = get_portfolio()
+        pos = portfolio["positions"].get(symbol, {})
+        if not pos:
+            continue
+
+        # Trailing stop exit
+        if price <= pos.get("trailing_stop", 0):
+            r = sell(symbol, pos["qty"], price, reason="trailing_stop")
+            r["exit_type"] = "TRAILING STOP"
+            results.append(r)
+
+        # Target exit
+        elif price >= pos.get("target", float("inf")):
+            r = sell(symbol, pos["qty"], price, reason="target")
+            r["exit_type"] = "TARGET HIT"
+            results.append(r)
 
     return results

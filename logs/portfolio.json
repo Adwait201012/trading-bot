@@ -1,73 +1,7 @@
 {
-  "cash": 53824.050537109375,
-  "positions": {
-    "RELIANCE.NS": {
-      "qty": 7,
-      "avg_price": 1321.199951171875,
-      "buy_time": "2026-06-01 21:12:34.676493"
-    },
-    "TCS.NS": {
-      "qty": 4,
-      "avg_price": 2258.89990234375,
-      "buy_time": "2026-06-01 21:12:34.850025"
-    },
-    "INFY.NS": {
-      "qty": 8,
-      "avg_price": 1160.9000244140625,
-      "buy_time": "2026-06-01 21:12:35.043407"
-    },
-    "HINDUNILVR.NS": {
-      "qty": 4,
-      "avg_price": 2153.5,
-      "buy_time": "2026-06-01 21:12:35.455839"
-    },
-    "BAJFINANCE.NS": {
-      "qty": 11,
-      "avg_price": 908.25,
-      "buy_time": "2026-06-01 21:12:35.722712"
-    }
-  },
-  "trades": [
-    {
-      "action": "BUY",
-      "symbol": "RELIANCE.NS",
-      "qty": 7,
-      "price": 1321.199951171875,
-      "total": 9248.399658203125,
-      "time": "2026-06-01 21:12:34.676500"
-    },
-    {
-      "action": "BUY",
-      "symbol": "TCS.NS",
-      "qty": 4,
-      "price": 2258.89990234375,
-      "total": 9035.599609375,
-      "time": "2026-06-01 21:12:34.850032"
-    },
-    {
-      "action": "BUY",
-      "symbol": "INFY.NS",
-      "qty": 8,
-      "price": 1160.9000244140625,
-      "total": 9287.2001953125,
-      "time": "2026-06-01 21:12:35.043415"
-    },
-    {
-      "action": "BUY",
-      "symbol": "HINDUNILVR.NS",
-      "qty": 4,
-      "price": 2153.5,
-      "total": 8614.0,
-      "time": "2026-06-01 21:12:35.455848"
-    },
-    {
-      "action": "BUY",
-      "symbol": "BAJFINANCE.NS",
-      "qty": 11,
-      "price": 908.25,
-      "total": 9990.75,
-      "time": "2026-06-01 21:12:35.722719"
-    }
-  ],
-  "created_at": "2026-06-01 21:12:34.675123"
+  "cash": 100000,
+  "peak_value": 100000,
+  "positions": {},
+  "trades": [],
+  "created_at": "2026-06-02"
 }

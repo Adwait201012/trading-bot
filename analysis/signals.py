@@ -1,81 +1,77 @@
-from config import RSI_OVERSOLD, RSI_OVERBOUGHT
-from data.news import score_sentiment, get_stock_news
+"""
+Signal generation — combines RSI, MACD, Supertrend, DMA, S/R, volume, sentiment.
+Score-based: BUY >= SIGNAL_MIN_SCORE, SELL <= -SIGNAL_MIN_SCORE.
+"""
+from config import RSI_OVERSOLD, RSI_OVERBOUGHT, SIGNAL_MIN_SCORE
 
 
-def generate_signal(symbol: str, indicators: dict, sentiment: float) -> dict:
-    """
-    Returns signal dict: action (BUY/SELL/HOLD), score, reasons
-    Score > 0 = bullish, < 0 = bearish
-    """
-    score = 0
-    reasons = []
+def generate_signal(symbol: str, ind: dict, sentiment: float = 0.0) -> dict:
+    score, reasons = 0, []
 
-    rsi = indicators["rsi"]
-    macd_hist = indicators["macd_hist"]
-    prev_macd_hist = indicators["prev_macd_hist"]
-    close = indicators["close"]
-    sma_short = indicators["sma_short"]
-    sma_long = indicators["sma_long"]
-    bb_lower = indicators["bb_lower"]
-    bb_upper = indicators["bb_upper"]
-    volume = indicators["volume"]
-    volume_sma = indicators["volume_sma"]
+    # ── Supertrend (strong weight) ──────────────────────────────────────────
+    if ind["st_dir"] == 1:
+        score += 2; reasons.append("Supertrend BULLISH")
+    elif ind["st_dir"] == -1:
+        score -= 2; reasons.append("Supertrend BEARISH")
 
-    # RSI
-    if rsi < RSI_OVERSOLD:
-        score += 2
-        reasons.append(f"RSI oversold ({rsi:.1f})")
-    elif rsi > RSI_OVERBOUGHT:
-        score -= 2
-        reasons.append(f"RSI overbought ({rsi:.1f})")
+    # Supertrend crossover (trend flip — high conviction)
+    if ind["prev_st_dir"] == -1 and ind["st_dir"] == 1:
+        score += 2; reasons.append("Supertrend flipped BULLISH (crossover)")
+    elif ind["prev_st_dir"] == 1 and ind["st_dir"] == -1:
+        score -= 2; reasons.append("Supertrend flipped BEARISH (crossover)")
 
-    # MACD crossover
-    if prev_macd_hist < 0 and macd_hist > 0:
-        score += 2
-        reasons.append("MACD bullish crossover")
-    elif prev_macd_hist > 0 and macd_hist < 0:
-        score -= 2
-        reasons.append("MACD bearish crossover")
+    # ── RSI ─────────────────────────────────────────────────────────────────
+    if ind["rsi"] < RSI_OVERSOLD:
+        score += 2; reasons.append(f"RSI oversold ({ind['rsi']:.1f})")
+    elif ind["rsi"] > RSI_OVERBOUGHT:
+        score -= 2; reasons.append(f"RSI overbought ({ind['rsi']:.1f})")
 
-    # SMA trend
-    if sma_short > sma_long:
-        score += 1
-        reasons.append("SMA short > long (uptrend)")
+    # ── MACD crossover ───────────────────────────────────────────────────────
+    if ind["prev_macd_hist"] < 0 and ind["macd_hist"] > 0:
+        score += 2; reasons.append("MACD bullish crossover")
+    elif ind["prev_macd_hist"] > 0 and ind["macd_hist"] < 0:
+        score -= 2; reasons.append("MACD bearish crossover")
+
+    # ── DMA alignment ────────────────────────────────────────────────────────
+    c = ind["close"]
+    if c > ind["dma21"] > ind["dma50"]:
+        score += 1; reasons.append("Price > 21 DMA > 50 DMA (uptrend)")
+    elif c < ind["dma21"] < ind["dma50"]:
+        score -= 1; reasons.append("Price < 21 DMA < 50 DMA (downtrend)")
+
+    if c > ind["dma200"]:
+        score += 1; reasons.append("Above 200 DMA (long-term bull)")
     else:
-        score -= 1
-        reasons.append("SMA short < long (downtrend)")
+        score -= 1; reasons.append("Below 200 DMA (long-term bear)")
 
-    # Bollinger Band squeeze
-    if close <= bb_lower:
-        score += 1
-        reasons.append("Price at lower Bollinger Band")
-    elif close >= bb_upper:
-        score -= 1
-        reasons.append("Price at upper Bollinger Band")
+    # ── Support / Resistance ─────────────────────────────────────────────────
+    support    = ind.get("support", 0)
+    resistance = ind.get("resistance", float("inf"))
+    if support and abs(c - support) / c < 0.02:        # within 2% of support
+        score += 1; reasons.append(f"Near support ₹{support:.0f} (dip-buy zone)")
+    if resistance and abs(c - resistance) / c < 0.02:  # within 2% of resistance
+        score -= 1; reasons.append(f"Near resistance ₹{resistance:.0f} (sell zone)")
 
-    # Volume confirmation
-    if volume > volume_sma * 1.5:
+    # ── Bollinger Bands ──────────────────────────────────────────────────────
+    if c <= ind["bb_lower"]:
+        score += 1; reasons.append("At lower Bollinger Band (oversold)")
+    elif c >= ind["bb_upper"]:
+        score -= 1; reasons.append("At upper Bollinger Band (overbought)")
+
+    # ── Volume confirmation ──────────────────────────────────────────────────
+    if ind["volume"] > ind["vol_sma"] * 1.5:
         if score > 0:
-            score += 1
-            reasons.append("High volume confirms bullish move")
+            score += 1; reasons.append("High volume confirms bullish move")
         elif score < 0:
-            score -= 1
-            reasons.append("High volume confirms bearish move")
+            score -= 1; reasons.append("High volume confirms bearish move")
 
-    # News sentiment
+    # ── News sentiment ───────────────────────────────────────────────────────
     if sentiment > 0.2:
-        score += 1
-        reasons.append(f"Positive market sentiment ({sentiment:+.2f})")
+        score += 1; reasons.append(f"Positive market sentiment ({sentiment:+.2f})")
     elif sentiment < -0.2:
-        score -= 1
-        reasons.append(f"Negative market sentiment ({sentiment:+.2f})")
+        score -= 1; reasons.append(f"Negative market sentiment ({sentiment:+.2f})")
 
-    # Decision
-    if score >= 2:
-        action = "BUY"
-    elif score <= -2:
-        action = "SELL"
-    else:
-        action = "HOLD"
-
-    return {"symbol": symbol, "action": action, "score": score, "reasons": reasons, "price": close}
+    action = "BUY" if score >= SIGNAL_MIN_SCORE else ("SELL" if score <= -SIGNAL_MIN_SCORE else "HOLD")
+    return {"symbol": symbol, "action": action, "score": score,
+            "reasons": reasons, "price": c, "atr": ind["atr"],
+            "support": ind.get("support"), "resistance": ind.get("resistance")}

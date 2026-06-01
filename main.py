@@ -1,131 +1,150 @@
 """
-Indian Stock Market Paper Trading Bot
---------------------------------------
-Fetches NSE stock data + market news, applies technical analysis,
-generates BUY/SELL/HOLD signals, and executes simulated trades.
+Indian Stock Market — Aggressive Paper Trading Bot
+===================================================
+Commands:
+  python main.py              — live scan loop (every 5 min)
+  python main.py --once       — single scan
+  python main.py --backtest   — run 5-year backtest on all stocks
+  python main.py --portfolio  — show portfolio only
+  python main.py --reset      — reset portfolio to ₹1,00,000
 
-Run: python main.py
-     python main.py --once       (single scan, no loop)
-     python main.py --reset      (reset portfolio)
-     python main.py --portfolio  (show portfolio only)
+WARNING: No real money order execution in this version.
+         Live trading hooks will be added after broker API is confirmed.
 """
-
-import sys
-import time
-import argparse
+import sys, time, argparse
 from datetime import datetime
-
 from colorama import Fore, Style, init
 
-from config import WATCHLIST
-from data.market_data import fetch_all_watchlist, fetch_current_price
+from config import ALL_STOCKS, STARTING_CAPITAL
+from data.fetcher import fetch_all, fetch_current_price, fetch_backtest_data
 from data.news import fetch_news, score_sentiment
-from analysis.technical import add_indicators, get_latest
+from analysis.indicators import add_all, get_latest
 from analysis.signals import generate_signal
-from trading.paper_trader import execute_signal, check_stop_loss_targets
-from trading.portfolio import reset, get_portfolio
-from reports.reporter import print_portfolio, print_signal, print_news, print_trade_result
+from trading.paper_trader import execute_signal, check_exits
+from trading.portfolio import get_portfolio, reset
+from reports.reporter import (print_risk_banner, print_portfolio,
+                               print_signal, print_trade, print_backtest_results)
 
 init(autoreset=True)
+SCAN_INTERVAL = 300
 
-SCAN_INTERVAL_SECONDS = 300  # scan every 5 minutes
+
+def _banner():
+    print(f"{Fore.CYAN}")
+    print("  ╔══════════════════════════════════════════════════╗")
+    print("  ║  INDIAN STOCK MARKET — AGGRESSIVE TRADING BOT   ║")
+    print("  ║  Supertrend + ATR Stops + Momentum + Dip-Buy    ║")
+    print("  ║  ⚠  PAPER TRADING ONLY — NO REAL ORDERS ⚠       ║")
+    print("  ╚══════════════════════════════════════════════════╝")
+    print(f"{Style.RESET_ALL}")
+
+
+def run_backtest():
+    from backtest.engine import run_multi
+    print(f"\n  {Fore.YELLOW}Running 5-year backtest on {len(ALL_STOCKS)} stocks...{Style.RESET_ALL}")
+    print(f"  {Fore.YELLOW}This may take 2–3 minutes. Fetching data...{Style.RESET_ALL}\n")
+    data = fetch_all(ALL_STOCKS, period="5y")
+    results = run_multi(ALL_STOCKS, data)
+    print_backtest_results(results)
 
 
 def run_scan(sentiment: float):
-    print(f"\n{Fore.CYAN}[{datetime.now().strftime('%H:%M:%S')}] Scanning {len(WATCHLIST)} stocks...{Style.RESET_ALL}")
+    now = datetime.now().strftime("%H:%M:%S")
+    print(f"\n{Fore.CYAN}[{now}] Scanning {len(ALL_STOCKS)} stocks...{Style.RESET_ALL}")
 
-    data = fetch_all_watchlist(WATCHLIST)
-    current_prices = {}
+    data   = fetch_all(ALL_STOCKS)
+    prices = {}
+    sigs   = []
 
-    signals = []
     for symbol, df in data.items():
         try:
-            df_ind = add_indicators(df)
+            df_ind = add_all(df)
             if df_ind.empty:
                 continue
-            indicators = get_latest(df_ind)
-            current_prices[symbol] = indicators["close"]
-            signal = generate_signal(symbol, indicators, sentiment)
-            signals.append(signal)
+            ind = get_latest(df_ind)
+            prices[symbol] = ind["close"]
+            sigs.append(generate_signal(symbol, ind, sentiment))
         except Exception as e:
-            print(f"  {Fore.YELLOW}⚠ Error processing {symbol}: {e}{Style.RESET_ALL}")
+            print(f"  {Fore.YELLOW}⚠ {symbol}: {e}{Style.RESET_ALL}")
 
-    # Check stop loss / targets first
-    sl_results = check_stop_loss_targets(current_prices)
-    for r in sl_results:
-        print(f"  {Fore.MAGENTA}[AUTO EXIT] {r.get('reason', '')} — {r['msg']}{Style.RESET_ALL}")
+    # Check trailing stop / target exits first
+    exits = check_exits(prices)
+    if exits:
+        print(f"\n  {Fore.MAGENTA}AUTO EXITS:{Style.RESET_ALL}")
+        for r in exits:
+            print(f"  {Fore.MAGENTA}[{r.get('exit_type','EXIT')}] {r['msg']}{Style.RESET_ALL}")
 
-    # Print all signals
+    # Print signals sorted by absolute score
     print(f"\n  {Fore.YELLOW}SIGNALS:{Style.RESET_ALL}")
-    for signal in sorted(signals, key=lambda x: abs(x["score"]), reverse=True):
-        print_signal(signal)
+    for sig in sorted(sigs, key=lambda x: abs(x["score"]), reverse=True):
+        print_signal(sig)
 
-    # Execute actionable signals
+    # Execute trades
     print(f"\n  {Fore.YELLOW}TRADE EXECUTION:{Style.RESET_ALL}")
     acted = False
-    for signal in signals:
-        if signal["action"] in ("BUY", "SELL"):
-            result = execute_signal(signal)
+    for sig in sigs:
+        if sig["action"] in ("BUY", "SELL"):
+            result = execute_signal(sig)
             if result:
-                print_trade_result(result)
+                print_trade(result)
                 acted = True
     if not acted:
-        print(f"  {Fore.YELLOW}No trades executed (all HOLD or conditions not met){Style.RESET_ALL}")
+        print(f"  No trades — all HOLD or circuit breaker active.")
 
-    # Refresh prices and show portfolio
-    for symbol in get_portfolio()["positions"]:
-        if symbol not in current_prices:
-            p = fetch_current_price(symbol)
+    # Refresh prices for open positions
+    for sym in get_portfolio()["positions"]:
+        if sym not in prices:
+            p = fetch_current_price(sym)
             if p:
-                current_prices[symbol] = p
+                prices[sym] = p
 
-    print_portfolio(current_prices)
+    print_portfolio(prices)
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--once", action="store_true", help="Run one scan and exit")
-    parser.add_argument("--reset", action="store_true", help="Reset portfolio to starting capital")
-    parser.add_argument("--portfolio", action="store_true", help="Show portfolio and exit")
+    parser.add_argument("--once",      action="store_true")
+    parser.add_argument("--backtest",  action="store_true")
+    parser.add_argument("--portfolio", action="store_true")
+    parser.add_argument("--reset",     action="store_true")
     args = parser.parse_args()
 
-    print(f"{Fore.CYAN}")
-    print("  ╔══════════════════════════════════════════╗")
-    print("  ║    INDIAN STOCK MARKET PAPER TRADING BOT ║")
-    print("  ║    Powered by yfinance + Technical AI    ║")
-    print("  ╚══════════════════════════════════════════╝")
-    print(f"{Style.RESET_ALL}")
+    _banner()
+    print_risk_banner()
 
     if args.reset:
         reset()
-        print(f"  {Fore.GREEN}Portfolio reset to ₹{100000:,.0f}{Style.RESET_ALL}")
+        print(f"  {Fore.GREEN}Portfolio reset to ₹{STARTING_CAPITAL:,.0f}{Style.RESET_ALL}")
         return
 
     if args.portfolio:
-        prices = {s: fetch_current_price(s) for s in WATCHLIST}
+        prices = {s: fetch_current_price(s) for s in ALL_STOCKS}
         print_portfolio({k: v for k, v in prices.items() if v})
         return
 
-    print(f"  {Fore.YELLOW}Fetching market news...{Style.RESET_ALL}")
+    if args.backtest:
+        run_backtest()
+        return
+
+    print(f"  {Fore.YELLOW}Fetching market news & sentiment...{Style.RESET_ALL}")
     headlines = fetch_news()
     sentiment = score_sentiment(headlines)
-    print_news(headlines, sentiment)
+    print(f"  Market sentiment: {'+' if sentiment >= 0 else ''}{sentiment:.2f}  ({len(headlines)} headlines)\n")
 
     if args.once:
         run_scan(sentiment)
         return
 
-    print(f"\n  {Fore.CYAN}Running continuously every {SCAN_INTERVAL_SECONDS//60} minutes. Press Ctrl+C to stop.{Style.RESET_ALL}")
+    print(f"  {Fore.CYAN}Running every {SCAN_INTERVAL//60} min. Press Ctrl+C to stop.{Style.RESET_ALL}")
     while True:
         try:
             run_scan(sentiment)
-            print(f"\n  {Fore.CYAN}Next scan in {SCAN_INTERVAL_SECONDS//60} min... (Ctrl+C to stop){Style.RESET_ALL}")
-            time.sleep(SCAN_INTERVAL_SECONDS)
-            # Refresh news every cycle
+            print(f"\n  Next scan in {SCAN_INTERVAL//60} min...")
+            time.sleep(SCAN_INTERVAL)
             headlines = fetch_news()
             sentiment = score_sentiment(headlines)
         except KeyboardInterrupt:
-            print(f"\n\n  {Fore.YELLOW}Bot stopped by user.{Style.RESET_ALL}")
+            print(f"\n  {Fore.YELLOW}Bot stopped.{Style.RESET_ALL}")
             sys.exit(0)
 
 
