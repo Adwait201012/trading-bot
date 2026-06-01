@@ -25,7 +25,10 @@ def _save(portfolio: dict):
 
 
 def get_portfolio() -> dict:
-    return _load()
+    portfolio = _load()
+    # Always persist so report can read it even with no trades
+    _save(portfolio)
+    return portfolio
 
 
 def get_total_value(portfolio: dict, current_prices: dict) -> float:

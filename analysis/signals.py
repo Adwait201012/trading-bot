@@ -71,9 +71,9 @@ def generate_signal(symbol: str, indicators: dict, sentiment: float) -> dict:
         reasons.append(f"Negative market sentiment ({sentiment:+.2f})")
 
     # Decision
-    if score >= 3:
+    if score >= 2:
         action = "BUY"
-    elif score <= -3:
+    elif score <= -2:
         action = "SELL"
     else:
         action = "HOLD"

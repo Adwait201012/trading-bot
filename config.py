@@ -29,8 +29,8 @@ TARGET_PCT = 0.06               # 6% target
 MAX_OPEN_POSITIONS = 5
 
 # --- Strategy thresholds ---
-RSI_OVERSOLD = 35
-RSI_OVERBOUGHT = 65
+RSI_OVERSOLD = 45
+RSI_OVERBOUGHT = 60
 RSI_PERIOD = 14
 MACD_FAST = 12
 MACD_SLOW = 26
