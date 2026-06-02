@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-01 21:38 IST
+**Last updated:** 2026-06-02 08:16 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -16,12 +16,12 @@
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| KOTAKBANK | 39 | ₹384.20 | ₹367.11 | ₹426.92 | ₹14,983.80 |
+| KOTAKBANK | 39 | ₹384.20 | ₹369.72 | ₹426.92 | ₹14,983.80 |
 | BAJAJFINSV | 8 | ₹1783.60 | ₹1712.96 | ₹1960.20 | ₹14,268.80 |
-| WIPRO | 73 | ₹204.25 | ₹195.09 | ₹227.14 | ₹14,910.25 |
-| TECHM | 10 | ₹1483.90 | ₹1403.65 | ₹1684.52 | ₹14,839.00 |
-| EICHERMOT | 2 | ₹7177.00 | ₹6796.03 | ₹8129.42 | ₹14,354.00 |
-| GRASIM | 4 | ₹3122.40 | ₹2984.04 | ₹3468.30 | ₹12,489.60 |
+| WIPRO | 73 | ₹204.25 | ₹203.04 | ₹227.14 | ₹14,910.25 |
+| TECHM | 10 | ₹1483.90 | ₹1532.21 | ₹1684.52 | ₹14,839.00 |
+| EICHERMOT | 2 | ₹7177.00 | ₹6931.62 | ₹8129.42 | ₹14,354.00 |
+| GRASIM | 4 | ₹3122.40 | ₹3004.57 | ₹3468.30 | ₹12,489.60 |
 
 ## 📋 Trade History (0 closed | Win rate 0% | Total P&L ₹+0.00)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
