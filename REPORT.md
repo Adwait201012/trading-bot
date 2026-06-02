@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-02 08:58 IST
+**Last updated:** 2026-06-02 09:17 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
