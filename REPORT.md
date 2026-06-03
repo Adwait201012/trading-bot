@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-03 09:05 IST
+**Last updated:** 2026-06-03 09:19 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,8 +20,8 @@
 | BAJAJFINSV | 8 | ₹1783.60 | ₹1712.96 | ₹1960.20 | ₹14,268.80 |
 | WIPRO | 73 | ₹204.25 | ₹203.56 | ₹227.14 | ₹14,910.25 |
 | EICHERMOT | 2 | ₹7177.00 | ₹6944.23 | ₹8129.42 | ₹14,354.00 |
-| GRASIM | 4 | ₹3122.40 | ₹3010.98 | ₹3468.30 | ₹12,489.60 |
-| BAJAJ-AUTO | 1 | ₹10267.00 | ₹9978.39 | ₹11466.61 | ₹10,267.00 |
+| GRASIM | 4 | ₹3122.40 | ₹3016.22 | ₹3468.30 | ₹12,489.60 |
+| BAJAJ-AUTO | 1 | ₹10267.00 | ₹9984.21 | ₹11466.61 | ₹10,267.00 |
 
 ## 📋 Trade History (1 closed | Win rate 100% | Total P&L ₹+29.00)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
