@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-04 12:33 IST
+**Last updated:** 2026-06-05 07:55 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹99,447.40 |
-| Cash Available | ₹18,072.35 |
-| Total P&L | 🔴 ₹-552.60 (-0.55%) |
-| Drawdown from Peak | 🟢 0.55% |
+| Current Value | ₹98,815.22 |
+| Cash Available | ₹32,350.42 |
+| Total P&L | 🔴 ₹-1,184.78 (-1.18%) |
+| Drawdown from Peak | 🟢 1.18% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | KOTAKBANK | 39 | ₹384.20 | ₹371.07 | ₹426.92 | ₹14,983.80 |
-| WIPRO | 73 | ₹204.25 | ₹203.56 | ₹227.14 | ₹14,910.25 |
 | EICHERMOT | 2 | ₹7177.00 | ₹6944.23 | ₹8129.42 | ₹14,354.00 |
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
-| ADANIPORTS | 8 | ₹1796.30 | ₹1741.63 | ₹2010.79 | ₹14,370.40 |
+| ADANIPORTS | 8 | ₹1796.30 | ₹1758.12 | ₹2010.79 | ₹14,370.40 |
+| SHREECEM | 0 | ₹24125.00 | ₹23105.37 | ₹26674.09 | ₹0.00 |
 
-## 📋 Trade History (2 closed | Win rate 50% | Total P&L ₹-552.60)
+## 📋 Trade History (3 closed | Win rate 33% | Total P&L ₹-1,184.78)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-06-05 07:55 | 🟢 BUY | SHREECEM | 0 | ₹24125.00 | — |  |
+| 2026-06-05 07:55 | 🔴 SELL | WIPRO | 73 | ₹195.59 | ₹-632.18 | trailing_stop |
 | 2026-06-04 08:34 | 🟢 BUY | ADANIPORTS | 8 | ₹1796.30 | — |  |
 | 2026-06-04 08:34 | 🔴 SELL | BAJAJFINSV | 8 | ₹1710.90 | ₹-581.60 | trailing_stop |
 | 2026-06-03 08:36 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹10267.00 | — |  |
