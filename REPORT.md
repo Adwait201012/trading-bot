@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-05 12:27 IST
+**Last updated:** 2026-06-08 08:31 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,11 +21,11 @@
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
 | ADANIPORTS | 8 | ₹1796.30 | ₹1769.47 | ₹2010.79 | ₹14,370.40 |
-| SHREECEM | 0 | ₹24125.00 | ₹23367.30 | ₹26674.09 | ₹0.00 |
 
-## 📋 Trade History (3 closed | Win rate 33% | Total P&L ₹-1,184.78)
+## 📋 Trade History (4 closed | Win rate 25% | Total P&L ₹-1,184.78)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-06-08 08:31 | 🔴 SELL | SHREECEM | 0 | ₹23675.00 | ₹-0.00 | signal |
 | 2026-06-05 07:55 | 🟢 BUY | SHREECEM | 0 | ₹24125.00 | — |  |
 | 2026-06-05 07:55 | 🔴 SELL | WIPRO | 73 | ₹195.59 | ₹-632.18 | trailing_stop |
 | 2026-06-04 08:34 | 🟢 BUY | ADANIPORTS | 8 | ₹1796.30 | — |  |
