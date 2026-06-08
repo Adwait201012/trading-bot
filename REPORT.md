@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-08 08:31 IST
+**Last updated:** 2026-06-08 09:04 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -9,7 +9,7 @@
 |---|---|
 | Starting Capital | ₹100,000.00 |
 | Current Value | ₹98,815.22 |
-| Cash Available | ₹32,350.42 |
+| Cash Available | ₹18,805.42 |
 | Total P&L | 🔴 ₹-1,184.78 (-1.18%) |
 | Drawdown from Peak | 🟢 1.18% |
 
@@ -21,10 +21,12 @@
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
 | ADANIPORTS | 8 | ₹1796.30 | ₹1769.47 | ₹2010.79 | ₹14,370.40 |
+| TECHM | 9 | ₹1505.00 | ₹1411.85 | ₹1737.88 | ₹13,545.00 |
 
 ## 📋 Trade History (4 closed | Win rate 25% | Total P&L ₹-1,184.78)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-06-08 09:04 | 🟢 BUY | TECHM | 9 | ₹1505.00 | — |  |
 | 2026-06-08 08:31 | 🔴 SELL | SHREECEM | 0 | ₹23675.00 | ₹-0.00 | signal |
 | 2026-06-05 07:55 | 🟢 BUY | SHREECEM | 0 | ₹24125.00 | — |  |
 | 2026-06-05 07:55 | 🔴 SELL | WIPRO | 73 | ₹195.59 | ₹-632.18 | trailing_stop |
