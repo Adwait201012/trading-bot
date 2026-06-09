@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-09 08:40 IST
+**Last updated:** 2026-06-09 08:50 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,7 +20,7 @@
 | EICHERMOT | 2 | ₹7177.00 | ₹7048.99 | ₹8129.42 | ₹14,354.00 |
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
-| ADANIPORTS | 8 | ₹1796.30 | ₹1769.47 | ₹2010.79 | ₹14,370.40 |
+| ADANIPORTS | 8 | ₹1796.30 | ₹1772.19 | ₹2010.79 | ₹14,370.40 |
 | TECHM | 9 | ₹1505.00 | ₹1459.95 | ₹1737.88 | ₹13,545.00 |
 
 ## 📋 Trade History (4 closed | Win rate 25% | Total P&L ₹-1,184.78)
