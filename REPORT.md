@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-09 12:25 IST
+**Last updated:** 2026-06-10 07:56 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -16,11 +16,11 @@
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| KOTAKBANK | 39 | ₹384.20 | ₹371.07 | ₹426.92 | ₹14,983.80 |
+| KOTAKBANK | 39 | ₹384.20 | ₹377.72 | ₹426.92 | ₹14,983.80 |
 | EICHERMOT | 2 | ₹7177.00 | ₹7048.99 | ₹8129.42 | ₹14,354.00 |
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
-| ADANIPORTS | 8 | ₹1796.30 | ₹1772.19 | ₹2010.79 | ₹14,370.40 |
+| ADANIPORTS | 8 | ₹1796.30 | ₹1784.80 | ₹2010.79 | ₹14,370.40 |
 | TECHM | 9 | ₹1505.00 | ₹1459.95 | ₹1737.88 | ₹13,545.00 |
 
 ## 📋 Trade History (4 closed | Win rate 25% | Total P&L ₹-1,184.78)
