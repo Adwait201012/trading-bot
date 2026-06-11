@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-11 08:24 IST
+**Last updated:** 2026-06-11 08:55 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
 | ADANIPORTS | 8 | ₹1796.30 | ₹1785.58 | ₹2010.79 | ₹14,370.40 |
-| ICICIBANK | 11 | ₹1322.90 | ₹1269.67 | ₹1455.98 | ₹14,551.90 |
+| ICICIBANK | 11 | ₹1322.90 | ₹1280.98 | ₹1455.98 | ₹14,551.90 |
 
 ## 📋 Trade History (5 closed | Win rate 20% | Total P&L ₹-1,633.88)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
