@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-11 13:05 IST
+**Last updated:** 2026-06-12 08:12 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹98,366.12 |
-| Cash Available | ₹17,349.42 |
-| Total P&L | 🔴 ₹-1,633.88 (-1.63%) |
-| Drawdown from Peak | 🟢 1.63% |
+| Current Value | ₹98,175.12 |
+| Cash Available | ₹13,274.92 |
+| Total P&L | 🔴 ₹-1,824.88 (-1.82%) |
+| Drawdown from Peak | 🟢 1.82% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| KOTAKBANK | 39 | ₹384.20 | ₹384.65 | ₹426.92 | ₹14,983.80 |
-| EICHERMOT | 2 | ₹7177.00 | ₹7048.99 | ₹8129.42 | ₹14,354.00 |
+| KOTAKBANK | 39 | ₹384.20 | ₹389.02 | ₹426.92 | ₹14,983.80 |
+| EICHERMOT | 2 | ₹7177.00 | ₹7049.48 | ₹8129.42 | ₹14,354.00 |
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
-| BAJAJ-AUTO | 1 | ₹10267.00 | ₹10095.76 | ₹11466.61 | ₹10,267.00 |
 | ADANIPORTS | 8 | ₹1796.30 | ₹1785.58 | ₹2010.79 | ₹14,370.40 |
-| ICICIBANK | 11 | ₹1322.90 | ₹1280.98 | ₹1455.98 | ₹14,551.90 |
+| ICICIBANK | 11 | ₹1322.90 | ₹1295.82 | ₹1455.98 | ₹14,551.90 |
+| SBIN | 14 | ₹1010.75 | ₹968.58 | ₹1116.17 | ₹14,150.50 |
 
-## 📋 Trade History (5 closed | Win rate 20% | Total P&L ₹-1,633.88)
+## 📋 Trade History (6 closed | Win rate 17% | Total P&L ₹-1,824.88)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-06-12 08:12 | 🟢 BUY | SBIN | 14 | ₹1010.75 | — |  |
+| 2026-06-12 08:12 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹10076.00 | ₹-191.00 | trailing_stop |
 | 2026-06-11 08:24 | 🟢 BUY | ICICIBANK | 11 | ₹1322.90 | — |  |
 | 2026-06-11 08:24 | 🔴 SELL | TECHM | 9 | ₹1455.10 | ₹-449.10 | trailing_stop |
 | 2026-06-08 09:04 | 🟢 BUY | TECHM | 9 | ₹1505.00 | — |  |
@@ -39,8 +41,6 @@
 | 2026-06-01 21:37 | 🟢 BUY | GRASIM | 4 | ₹3122.40 | — |  |
 | 2026-06-01 21:37 | 🟢 BUY | EICHERMOT | 2 | ₹7177.00 | — |  |
 | 2026-06-01 21:37 | 🟢 BUY | TECHM | 10 | ₹1483.90 | — |  |
-| 2026-06-01 21:37 | 🟢 BUY | WIPRO | 73 | ₹204.25 | — |  |
-| 2026-06-01 21:37 | 🟢 BUY | BAJAJFINSV | 8 | ₹1783.60 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
