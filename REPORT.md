@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-12 08:48 IST
+**Last updated:** 2026-06-12 09:10 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -16,12 +16,12 @@
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| KOTAKBANK | 39 | ₹384.20 | ₹391.30 | ₹426.92 | ₹14,983.80 |
-| EICHERMOT | 2 | ₹7177.00 | ₹7075.66 | ₹8129.42 | ₹14,354.00 |
+| KOTAKBANK | 39 | ₹384.20 | ₹391.54 | ₹426.92 | ₹14,983.80 |
+| EICHERMOT | 2 | ₹7177.00 | ₹7085.85 | ₹8129.42 | ₹14,354.00 |
 | GRASIM | 4 | ₹3122.40 | ₹3041.63 | ₹3468.30 | ₹12,489.60 |
 | ADANIPORTS | 8 | ₹1796.30 | ₹1785.58 | ₹2010.79 | ₹14,370.40 |
-| ICICIBANK | 11 | ₹1322.90 | ₹1298.93 | ₹1455.98 | ₹14,551.90 |
-| SBIN | 14 | ₹1010.75 | ₹984.21 | ₹1116.17 | ₹14,150.50 |
+| ICICIBANK | 11 | ₹1322.90 | ₹1301.06 | ₹1455.98 | ₹14,551.90 |
+| SBIN | 14 | ₹1010.75 | ₹985.23 | ₹1116.17 | ₹14,150.50 |
 
 ## 📋 Trade History (6 closed | Win rate 17% | Total P&L ₹-1,824.88)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
