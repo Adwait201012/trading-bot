@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-25 07:02 IST
+**Last updated:** 2026-06-25 07:55 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,7 +20,7 @@
 | EICHERMOT | 2 | ₹7177.00 | ₹7508.77 | ₹8129.42 | ₹14,354.00 |
 | GRASIM | 4 | ₹3122.40 | ₹3079.94 | ₹3468.30 | ₹12,489.60 |
 | ICICIBANK | 11 | ₹1322.90 | ₹1355.38 | ₹1455.98 | ₹14,551.90 |
-| SBIN | 14 | ₹1010.75 | ₹1018.65 | ₹1116.17 | ₹14,150.50 |
+| SBIN | 14 | ₹1010.75 | ₹1019.71 | ₹1116.17 | ₹14,150.50 |
 | BAJFINANCE | 15 | ₹969.30 | ₹961.22 | ₹1076.94 | ₹14,539.50 |
 
 ## 📋 Trade History (7 closed | Win rate 14% | Total P&L ₹-1,890.48)
