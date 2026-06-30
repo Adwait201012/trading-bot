@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-29 13:54 IST
+**Last updated:** 2026-06-30 07:38 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,10 +8,10 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹99,038.97 |
-| Cash Available | ₹13,537.97 |
-| Total P&L | 🔴 ₹-961.03 (-0.96%) |
-| Drawdown from Peak | 🟢 0.96% |
+| Current Value | ₹98,471.97 |
+| Cash Available | ₹12,851.67 |
+| Total P&L | 🔴 ₹-1,528.03 (-1.53%) |
+| Drawdown from Peak | 🟢 1.53% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
@@ -19,13 +19,15 @@
 | GRASIM | 4 | ₹3122.40 | ₹3079.94 | ₹3468.30 | ₹12,489.60 |
 | ICICIBANK | 11 | ₹1322.90 | ₹1355.77 | ₹1455.98 | ₹14,551.90 |
 | SBIN | 14 | ₹1010.75 | ₹1019.71 | ₹1116.17 | ₹14,150.50 |
-| BAJFINANCE | 15 | ₹969.30 | ₹961.22 | ₹1076.94 | ₹14,539.50 |
-| EICHERMOT | 2 | ₹7416.50 | ₹7246.39 | ₹8265.12 | ₹14,833.00 |
-| ADANIENT | 5 | ₹2987.30 | ₹2885.85 | ₹3405.18 | ₹14,936.50 |
+| BAJFINANCE | 15 | ₹969.30 | ₹970.00 | ₹1076.94 | ₹14,539.50 |
+| ADANIENT | 5 | ₹2987.30 | ₹2915.82 | ₹3405.18 | ₹14,936.50 |
+| AXISBANK | 11 | ₹1359.30 | ₹1311.59 | ₹1478.56 | ₹14,952.30 |
 
-## 📋 Trade History (9 closed | Win rate 33% | Total P&L ₹-961.03)
+## 📋 Trade History (10 closed | Win rate 30% | Total P&L ₹-1,528.03)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-06-30 07:38 | 🟢 BUY | AXISBANK | 11 | ₹1359.30 | — |  |
+| 2026-06-30 07:38 | 🔴 SELL | EICHERMOT | 2 | ₹7133.00 | ₹-567.00 | trailing_stop |
 | 2026-06-29 08:35 | 🟢 BUY | ADANIENT | 5 | ₹2987.30 | — |  |
 | 2026-06-29 08:35 | 🟢 BUY | EICHERMOT | 2 | ₹7416.50 | — |  |
 | 2026-06-29 08:35 | 🔴 SELL | EICHERMOT | 2 | ₹7416.50 | ₹+479.00 | trailing_stop |
@@ -39,8 +41,6 @@
 | 2026-06-08 09:04 | 🟢 BUY | TECHM | 9 | ₹1505.00 | — |  |
 | 2026-06-08 08:31 | 🔴 SELL | SHREECEM | 0 | ₹23675.00 | ₹-0.00 | signal |
 | 2026-06-05 07:55 | 🟢 BUY | SHREECEM | 0 | ₹24125.00 | — |  |
-| 2026-06-05 07:55 | 🔴 SELL | WIPRO | 73 | ₹195.59 | ₹-632.18 | trailing_stop |
-| 2026-06-04 08:34 | 🟢 BUY | ADANIPORTS | 8 | ₹1796.30 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
