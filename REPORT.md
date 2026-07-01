@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-06-30 12:00 IST
+**Last updated:** 2026-07-01 07:58 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -19,9 +19,9 @@
 | GRASIM | 4 | ₹3122.40 | ₹3079.94 | ₹3468.30 | ₹12,489.60 |
 | ICICIBANK | 11 | ₹1322.90 | ₹1355.77 | ₹1455.98 | ₹14,551.90 |
 | SBIN | 14 | ₹1010.75 | ₹1019.71 | ₹1116.17 | ₹14,150.50 |
-| BAJFINANCE | 15 | ₹969.30 | ₹976.79 | ₹1076.94 | ₹14,539.50 |
-| ADANIENT | 5 | ₹2987.30 | ₹2944.92 | ₹3405.18 | ₹14,936.50 |
-| AXISBANK | 11 | ₹1359.30 | ₹1317.84 | ₹1478.56 | ₹14,952.30 |
+| BAJFINANCE | 15 | ₹969.30 | ₹986.59 | ₹1076.94 | ₹14,539.50 |
+| ADANIENT | 5 | ₹2987.30 | ₹3024.95 | ₹3405.18 | ₹14,936.50 |
+| AXISBANK | 11 | ₹1359.30 | ₹1335.30 | ₹1478.56 | ₹14,952.30 |
 
 ## 📋 Trade History (10 closed | Win rate 30% | Total P&L ₹-1,528.03)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
