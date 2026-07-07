@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-07 10:00 IST
+**Last updated:** 2026-07-07 10:14 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | SBIN | 14 | ₹1010.75 | ₹1021.22 | ₹1116.17 | ₹14,150.50 |
 | BAJFINANCE | 15 | ₹969.30 | ₹1011.32 | ₹1076.94 | ₹14,539.50 |
 | AXISBANK | 11 | ₹1359.30 | ₹1335.30 | ₹1478.56 | ₹14,952.30 |
-| HCLTECH | 13 | ₹1170.00 | ₹1100.73 | ₹1343.17 | ₹15,210.00 |
+| HCLTECH | 13 | ₹1170.00 | ₹1133.15 | ₹1343.17 | ₹15,210.00 |
 
 ## 📋 Trade History (11 closed | Win rate 36% | Total P&L ₹-915.03)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
