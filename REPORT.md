@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-08 06:39 IST
+**Last updated:** 2026-07-08 07:16 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,10 +8,10 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹99,084.97 |
+| Current Value | ₹98,696.67 |
 | Cash Available | ₹13,191.17 |
-| Total P&L | 🔴 ₹-915.03 (-0.92%) |
-| Drawdown from Peak | 🟢 0.92% |
+| Total P&L | 🔴 ₹-1,303.33 (-1.30%) |
+| Drawdown from Peak | 🟢 1.30% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
@@ -20,12 +20,14 @@
 | ICICIBANK | 11 | ₹1322.90 | ₹1384.48 | ₹1455.98 | ₹14,551.90 |
 | SBIN | 14 | ₹1010.75 | ₹1021.22 | ₹1116.17 | ₹14,150.50 |
 | BAJFINANCE | 15 | ₹969.30 | ₹1011.32 | ₹1076.94 | ₹14,539.50 |
-| AXISBANK | 11 | ₹1359.30 | ₹1335.30 | ₹1478.56 | ₹14,952.30 |
 | HCLTECH | 13 | ₹1170.00 | ₹1133.15 | ₹1343.17 | ₹15,210.00 |
+| AXISBANK | 11 | ₹1324.00 | ₹1271.52 | ₹1455.20 | ₹14,564.00 |
 
-## 📋 Trade History (11 closed | Win rate 36% | Total P&L ₹-915.03)
+## 📋 Trade History (12 closed | Win rate 33% | Total P&L ₹-1,303.33)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-07-08 07:16 | 🟢 BUY | AXISBANK | 11 | ₹1324.00 | — |  |
+| 2026-07-08 07:16 | 🔴 SELL | AXISBANK | 11 | ₹1324.00 | ₹-388.30 | trailing_stop |
 | 2026-07-07 10:00 | 🟢 BUY | HCLTECH | 13 | ₹1170.00 | — |  |
 | 2026-07-07 10:00 | 🔴 SELL | ADANIENT | 5 | ₹3109.90 | ₹+613.00 | trailing_stop |
 | 2026-06-30 07:38 | 🟢 BUY | AXISBANK | 11 | ₹1359.30 | — |  |
@@ -39,8 +41,6 @@
 | 2026-06-12 08:12 | 🟢 BUY | SBIN | 14 | ₹1010.75 | — |  |
 | 2026-06-12 08:12 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹10076.00 | ₹-191.00 | trailing_stop |
 | 2026-06-11 08:24 | 🟢 BUY | ICICIBANK | 11 | ₹1322.90 | — |  |
-| 2026-06-11 08:24 | 🔴 SELL | TECHM | 9 | ₹1455.10 | ₹-449.10 | trailing_stop |
-| 2026-06-08 09:04 | 🟢 BUY | TECHM | 9 | ₹1505.00 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
