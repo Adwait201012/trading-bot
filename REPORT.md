@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-13 09:57 IST
+**Last updated:** 2026-07-13 10:34 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,8 +20,8 @@
 | AXISBANK | 11 | ₹1324.00 | ₹1296.21 | ₹1455.20 | ₹14,564.00 |
 | SBIN | 14 | ₹1016.70 | ₹1007.73 | ₹1108.02 | ₹14,233.80 |
 | BAJFINANCE | 14 | ₹1009.00 | ₹992.50 | ₹1128.51 | ₹14,126.00 |
-| ICICIBANK | 10 | ₹1380.30 | ₹1367.02 | ₹1504.73 | ₹13,803.00 |
-| INFY | 13 | ₹1101.90 | ₹1033.26 | ₹1273.51 | ₹14,324.70 |
+| ICICIBANK | 10 | ₹1380.30 | ₹1367.21 | ₹1504.73 | ₹13,803.00 |
+| INFY | 13 | ₹1101.90 | ₹1069.52 | ₹1273.51 | ₹14,324.70 |
 
 ## 📋 Trade History (16 closed | Win rate 50% | Total P&L ₹+32.47)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
