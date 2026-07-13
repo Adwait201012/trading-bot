@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-10 12:15 IST
+**Last updated:** 2026-07-13 06:40 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -17,7 +17,7 @@
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | GRASIM | 4 | ₹3122.40 | ₹3138.73 | ₹3468.30 | ₹12,489.60 |
-| HCLTECH | 13 | ₹1170.00 | ₹1133.15 | ₹1343.17 | ₹15,210.00 |
+| HCLTECH | 13 | ₹1170.00 | ₹1180.39 | ₹1343.17 | ₹15,210.00 |
 | AXISBANK | 11 | ₹1324.00 | ₹1296.21 | ₹1455.20 | ₹14,564.00 |
 | SBIN | 14 | ₹1016.70 | ₹1005.21 | ₹1108.02 | ₹14,233.80 |
 | BAJFINANCE | 14 | ₹1009.00 | ₹989.88 | ₹1128.51 | ₹14,126.00 |
