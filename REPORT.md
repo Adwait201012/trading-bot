@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-13 09:47 IST
+**Last updated:** 2026-07-13 09:57 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹100,006.87 |
-| Cash Available | ₹15,580.47 |
-| Total P&L | 🟢 ₹+6.87 (+0.01%) |
-| Drawdown from Peak | 🟢 -0.01% |
+| Current Value | ₹100,032.47 |
+| Cash Available | ₹13,770.97 |
+| Total P&L | 🟢 ₹+32.47 (+0.03%) |
+| Drawdown from Peak | 🟢 -0.03% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| GRASIM | 4 | ₹3122.40 | ₹3138.73 | ₹3468.30 | ₹12,489.60 |
 | HCLTECH | 13 | ₹1170.00 | ₹1195.53 | ₹1343.17 | ₹15,210.00 |
 | AXISBANK | 11 | ₹1324.00 | ₹1296.21 | ₹1455.20 | ₹14,564.00 |
 | SBIN | 14 | ₹1016.70 | ₹1007.73 | ₹1108.02 | ₹14,233.80 |
-| BAJFINANCE | 14 | ₹1009.00 | ₹992.21 | ₹1128.51 | ₹14,126.00 |
+| BAJFINANCE | 14 | ₹1009.00 | ₹992.50 | ₹1128.51 | ₹14,126.00 |
 | ICICIBANK | 10 | ₹1380.30 | ₹1367.02 | ₹1504.73 | ₹13,803.00 |
+| INFY | 13 | ₹1101.90 | ₹1033.26 | ₹1273.51 | ₹14,324.70 |
 
-## 📋 Trade History (15 closed | Win rate 47% | Total P&L ₹+6.87)
+## 📋 Trade History (16 closed | Win rate 50% | Total P&L ₹+32.47)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-07-13 09:57 | 🟢 BUY | INFY | 13 | ₹1101.90 | — |  |
+| 2026-07-13 09:57 | 🔴 SELL | GRASIM | 4 | ₹3128.80 | ₹+25.60 | trailing_stop |
 | 2026-07-08 09:13 | 🟢 BUY | ICICIBANK | 10 | ₹1380.30 | — |  |
 | 2026-07-08 09:13 | 🔴 SELL | ICICIBANK | 11 | ₹1380.30 | ₹+631.40 | trailing_stop |
 | 2026-07-08 08:44 | 🟢 BUY | BAJFINANCE | 14 | ₹1009.00 | — |  |
@@ -39,8 +41,6 @@
 | 2026-06-30 07:38 | 🟢 BUY | AXISBANK | 11 | ₹1359.30 | — |  |
 | 2026-06-30 07:38 | 🔴 SELL | EICHERMOT | 2 | ₹7133.00 | ₹-567.00 | trailing_stop |
 | 2026-06-29 08:35 | 🟢 BUY | ADANIENT | 5 | ₹2987.30 | — |  |
-| 2026-06-29 08:35 | 🟢 BUY | EICHERMOT | 2 | ₹7416.50 | — |  |
-| 2026-06-29 08:35 | 🔴 SELL | EICHERMOT | 2 | ₹7416.50 | ₹+479.00 | trailing_stop |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
