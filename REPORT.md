@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-14 06:27 IST
+**Last updated:** 2026-07-14 06:57 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,10 +8,10 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹100,210.57 |
-| Cash Available | ₹15,964.47 |
-| Total P&L | 🟢 ₹+210.57 (+0.21%) |
-| Drawdown from Peak | 🟢 -0.21% |
+| Current Value | ₹100,131.97 |
+| Cash Available | ₹14,113.47 |
+| Total P&L | 🟢 ₹+131.97 (+0.13%) |
+| Drawdown from Peak | 🟢 -0.13% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
@@ -21,11 +21,13 @@
 | BAJFINANCE | 14 | ₹1009.00 | ₹992.50 | ₹1128.51 | ₹14,126.00 |
 | ICICIBANK | 10 | ₹1380.30 | ₹1367.21 | ₹1504.73 | ₹13,803.00 |
 | INFY | 13 | ₹1101.90 | ₹1069.52 | ₹1273.51 | ₹14,324.70 |
-| TCS | 6 | ₹2199.10 | ₹2125.27 | ₹2525.59 | ₹13,194.60 |
+| TECHM | 10 | ₹1496.70 | ₹1407.75 | ₹1719.06 | ₹14,967.00 |
 
-## 📋 Trade History (17 closed | Win rate 53% | Total P&L ₹+210.57)
+## 📋 Trade History (18 closed | Win rate 50% | Total P&L ₹+131.97)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-07-14 06:57 | 🟢 BUY | TECHM | 10 | ₹1496.70 | — |  |
+| 2026-07-14 06:57 | 🔴 SELL | TCS | 6 | ₹2186.00 | ₹-78.60 | signal |
 | 2026-07-14 05:56 | 🟢 BUY | TCS | 6 | ₹2199.10 | — |  |
 | 2026-07-14 05:56 | 🔴 SELL | HCLTECH | 13 | ₹1183.70 | ₹+178.10 | trailing_stop |
 | 2026-07-13 09:57 | 🟢 BUY | INFY | 13 | ₹1101.90 | — |  |
@@ -39,8 +41,6 @@
 | 2026-07-08 07:16 | 🟢 BUY | AXISBANK | 11 | ₹1324.00 | — |  |
 | 2026-07-08 07:16 | 🔴 SELL | AXISBANK | 11 | ₹1324.00 | ₹-388.30 | trailing_stop |
 | 2026-07-07 10:00 | 🟢 BUY | HCLTECH | 13 | ₹1170.00 | — |  |
-| 2026-07-07 10:00 | 🔴 SELL | ADANIENT | 5 | ₹3109.90 | ₹+613.00 | trailing_stop |
-| 2026-06-30 07:38 | 🟢 BUY | AXISBANK | 11 | ₹1359.30 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
