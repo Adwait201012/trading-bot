@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-14 05:56 IST
+**Last updated:** 2026-07-14 06:27 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | BAJFINANCE | 14 | ₹1009.00 | ₹992.50 | ₹1128.51 | ₹14,126.00 |
 | ICICIBANK | 10 | ₹1380.30 | ₹1367.21 | ₹1504.73 | ₹13,803.00 |
 | INFY | 13 | ₹1101.90 | ₹1069.52 | ₹1273.51 | ₹14,324.70 |
-| TCS | 6 | ₹2199.10 | ₹2068.51 | ₹2525.59 | ₹13,194.60 |
+| TCS | 6 | ₹2199.10 | ₹2125.27 | ₹2525.59 | ₹13,194.60 |
 
 ## 📋 Trade History (17 closed | Win rate 53% | Total P&L ₹+210.57)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
