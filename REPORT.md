@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-13 12:21 IST
+**Last updated:** 2026-07-14 05:56 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹100,032.47 |
-| Cash Available | ₹13,770.97 |
-| Total P&L | 🟢 ₹+32.47 (+0.03%) |
-| Drawdown from Peak | 🟢 -0.03% |
+| Current Value | ₹100,210.57 |
+| Cash Available | ₹15,964.47 |
+| Total P&L | 🟢 ₹+210.57 (+0.21%) |
+| Drawdown from Peak | 🟢 -0.21% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| HCLTECH | 13 | ₹1170.00 | ₹1195.53 | ₹1343.17 | ₹15,210.00 |
 | AXISBANK | 11 | ₹1324.00 | ₹1296.21 | ₹1455.20 | ₹14,564.00 |
 | SBIN | 14 | ₹1016.70 | ₹1007.73 | ₹1108.02 | ₹14,233.80 |
 | BAJFINANCE | 14 | ₹1009.00 | ₹992.50 | ₹1128.51 | ₹14,126.00 |
 | ICICIBANK | 10 | ₹1380.30 | ₹1367.21 | ₹1504.73 | ₹13,803.00 |
 | INFY | 13 | ₹1101.90 | ₹1069.52 | ₹1273.51 | ₹14,324.70 |
+| TCS | 6 | ₹2199.10 | ₹2068.51 | ₹2525.59 | ₹13,194.60 |
 
-## 📋 Trade History (16 closed | Win rate 50% | Total P&L ₹+32.47)
+## 📋 Trade History (17 closed | Win rate 53% | Total P&L ₹+210.57)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-07-14 05:56 | 🟢 BUY | TCS | 6 | ₹2199.10 | — |  |
+| 2026-07-14 05:56 | 🔴 SELL | HCLTECH | 13 | ₹1183.70 | ₹+178.10 | trailing_stop |
 | 2026-07-13 09:57 | 🟢 BUY | INFY | 13 | ₹1101.90 | — |  |
 | 2026-07-13 09:57 | 🔴 SELL | GRASIM | 4 | ₹3128.80 | ₹+25.60 | trailing_stop |
 | 2026-07-08 09:13 | 🟢 BUY | ICICIBANK | 10 | ₹1380.30 | — |  |
@@ -39,8 +41,6 @@
 | 2026-07-07 10:00 | 🟢 BUY | HCLTECH | 13 | ₹1170.00 | — |  |
 | 2026-07-07 10:00 | 🔴 SELL | ADANIENT | 5 | ₹3109.90 | ₹+613.00 | trailing_stop |
 | 2026-06-30 07:38 | 🟢 BUY | AXISBANK | 11 | ₹1359.30 | — |  |
-| 2026-06-30 07:38 | 🔴 SELL | EICHERMOT | 2 | ₹7133.00 | ₹-567.00 | trailing_stop |
-| 2026-06-29 08:35 | 🟢 BUY | ADANIENT | 5 | ₹2987.30 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
