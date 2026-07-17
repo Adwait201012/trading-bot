@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-17 06:29 IST
+**Last updated:** 2026-07-17 07:04 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,7 +20,7 @@
 | BAJFINANCE | 14 | ₹1009.00 | ₹1020.83 | ₹1128.51 | ₹14,126.00 |
 | ICICIBANK | 10 | ₹1380.30 | ₹1396.99 | ₹1504.73 | ₹13,803.00 |
 | INFY | 13 | ₹1101.90 | ₹1069.52 | ₹1273.51 | ₹14,324.70 |
-| TECHM | 10 | ₹1496.70 | ₹1491.67 | ₹1719.06 | ₹14,967.00 |
+| TECHM | 10 | ₹1496.70 | ₹1511.74 | ₹1719.06 | ₹14,967.00 |
 | BAJAJ-AUTO | 1 | ₹10355.00 | ₹10111.28 | ₹11420.52 | ₹10,355.00 |
 
 ## 📋 Trade History (19 closed | Win rate 47% | Total P&L ₹-106.73)
