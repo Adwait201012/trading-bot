@@ -31,7 +31,7 @@
       "avg_price": 10355.0,
       "stop": 9928.790796020541,
       "target": 11420.523009948645,
-      "trailing_stop": 10626.35,
+      "trailing_stop": 10628.29,
       "time": "2026-07-16 06:04:51.729135"
     },
     "EICHERMOT.NS": {
@@ -39,7 +39,7 @@
       "avg_price": 7638.0,
       "stop": 7330.80186065245,
       "target": 8405.995348368875,
-      "trailing_stop": 7395.28,
+      "trailing_stop": 7397.22,
       "time": "2026-07-22 06:14:52.696916"
     },
     "ULTRACEMCO.NS": {
