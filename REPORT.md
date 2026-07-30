@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-29 11:48 IST
+**Last updated:** 2026-07-30 06:12 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,8 +20,8 @@
 | EICHERMOT | 2 | ₹7638.00 | ₹7625.17 | ₹8406.00 | ₹15,276.00 |
 | ULTRACEMCO | 1 | ₹11997.00 | ₹11669.10 | ₹13095.66 | ₹11,997.00 |
 | BAJFINANCE | 15 | ₹1007.20 | ₹1025.78 | ₹1127.91 | ₹15,108.00 |
-| TECHM | 9 | ₹1537.70 | ₹1602.25 | ₹1763.00 | ₹13,839.30 |
-| SBIN | 15 | ₹1014.40 | ₹984.55 | ₹1103.71 | ₹15,216.00 |
+| TECHM | 9 | ₹1537.70 | ₹1630.47 | ₹1763.00 | ₹13,839.30 |
+| SBIN | 15 | ₹1014.40 | ₹985.52 | ₹1103.71 | ₹15,216.00 |
 
 ## 📋 Trade History (24 closed | Win rate 50% | Total P&L ₹+932.07)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
