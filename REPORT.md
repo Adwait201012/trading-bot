@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-07-31 08:09 IST
+**Last updated:** 2026-07-31 08:20 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | ULTRACEMCO | 1 | ₹11997.00 | ₹11669.10 | ₹13095.66 | ₹11,997.00 |
 | TECHM | 9 | ₹1537.70 | ₹1630.76 | ₹1763.00 | ₹13,839.30 |
 | SBIN | 15 | ₹1014.40 | ₹998.81 | ₹1103.71 | ₹15,216.00 |
-| BAJFINANCE | 13 | ₹1131.60 | ₹1109.29 | ₹1273.82 | ₹14,710.80 |
+| BAJFINANCE | 13 | ₹1131.60 | ₹1110.36 | ₹1273.82 | ₹14,710.80 |
 
 ## 📋 Trade History (25 closed | Win rate 52% | Total P&L ₹+2,798.07)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
