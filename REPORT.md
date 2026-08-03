@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-03 06:47 IST
+**Last updated:** 2026-08-03 07:49 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -17,11 +17,11 @@
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | ICICIBANK | 10 | ₹1380.30 | ₹1421.63 | ₹1504.73 | ₹13,803.00 |
-| EICHERMOT | 2 | ₹7638.00 | ₹7768.73 | ₹8406.00 | ₹15,276.00 |
+| EICHERMOT | 2 | ₹7638.00 | ₹7798.80 | ₹8406.00 | ₹15,276.00 |
 | ULTRACEMCO | 1 | ₹11997.00 | ₹11669.10 | ₹13095.66 | ₹11,997.00 |
 | TECHM | 9 | ₹1537.70 | ₹1630.76 | ₹1763.00 | ₹13,839.30 |
 | SBIN | 15 | ₹1014.40 | ₹1015.78 | ₹1103.71 | ₹15,216.00 |
-| BAJFINANCE | 13 | ₹1131.60 | ₹1122.19 | ₹1273.82 | ₹14,710.80 |
+| BAJFINANCE | 13 | ₹1131.60 | ₹1123.65 | ₹1273.82 | ₹14,710.80 |
 
 ## 📋 Trade History (25 closed | Win rate 52% | Total P&L ₹+2,798.07)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
