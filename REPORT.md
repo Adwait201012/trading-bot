@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-07 07:58 IST
+**Last updated:** 2026-08-07 08:20 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,10 +8,10 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹102,332.67 |
-| Cash Available | ₹16,860.17 |
-| Total P&L | 🟢 ₹+2,332.67 (+2.33%) |
-| Drawdown from Peak | 🟢 -2.33% |
+| Current Value | ₹103,840.17 |
+| Cash Available | ₹19,641.77 |
+| Total P&L | 🟢 ₹+3,840.17 (+3.84%) |
+| Drawdown from Peak | 🟢 -3.84% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
@@ -20,12 +20,14 @@
 | EICHERMOT | 2 | ₹7638.00 | ₹7808.50 | ₹8406.00 | ₹15,276.00 |
 | ULTRACEMCO | 1 | ₹11997.00 | ₹11824.30 | ₹13095.66 | ₹11,997.00 |
 | TECHM | 9 | ₹1537.70 | ₹1630.76 | ₹1763.00 | ₹13,839.30 |
-| SBIN | 15 | ₹1014.40 | ₹1060.60 | ₹1103.71 | ₹15,216.00 |
 | BAJFINANCE | 14 | ₹1095.80 | ₹1061.76 | ₹1247.64 | ₹15,341.20 |
+| BAJAJFINSV | 7 | ₹1991.70 | ₹1892.41 | ₹2239.91 | ₹13,941.90 |
 
-## 📋 Trade History (26 closed | Win rate 50% | Total P&L ₹+2,332.67)
+## 📋 Trade History (27 closed | Win rate 52% | Total P&L ₹+3,840.17)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-08-07 08:20 | 🟢 BUY | BAJAJFINSV | 7 | ₹1991.70 | — |  |
+| 2026-08-07 08:20 | 🔴 SELL | SBIN | 15 | ₹1114.90 | ₹+1507.50 | target |
 | 2026-08-07 05:23 | 🟢 BUY | BAJFINANCE | 14 | ₹1095.80 | — |  |
 | 2026-08-07 05:23 | 🔴 SELL | BAJFINANCE | 13 | ₹1095.80 | ₹-465.40 | trailing_stop |
 | 2026-07-31 06:32 | 🟢 BUY | BAJFINANCE | 13 | ₹1131.60 | — |  |
@@ -39,8 +41,6 @@
 | 2026-07-22 06:14 | 🟢 BUY | ULTRACEMCO | 1 | ₹11997.00 | — |  |
 | 2026-07-22 06:14 | 🟢 BUY | EICHERMOT | 2 | ₹7638.00 | — |  |
 | 2026-07-22 06:14 | 🔴 SELL | INFY | 13 | ₹1059.20 | ₹-555.10 | trailing_stop |
-| 2026-07-22 06:14 | 🔴 SELL | SBIN | 14 | ₹1024.60 | ₹+110.60 | trailing_stop |
-| 2026-07-16 06:04 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹10355.00 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
