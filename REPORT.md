@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-11 05:42 IST
+**Last updated:** 2026-08-11 06:01 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹104,251.17 |
-| Cash Available | ₹18,220.37 |
-| Total P&L | 🟢 ₹+4,251.17 (+4.25%) |
-| Drawdown from Peak | 🟢 -4.25% |
+| Current Value | ₹104,051.17 |
+| Cash Available | ₹15,069.57 |
+| Total P&L | 🟢 ₹+4,051.17 (+4.05%) |
+| Drawdown from Peak | 🟢 -4.05% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | EICHERMOT | 2 | ₹7638.00 | ₹7832.27 | ₹8406.00 | ₹15,276.00 |
-| ULTRACEMCO | 1 | ₹11997.00 | ₹11824.30 | ₹13095.66 | ₹11,997.00 |
 | TECHM | 9 | ₹1537.70 | ₹1630.76 | ₹1763.00 | ₹13,839.30 |
 | BAJFINANCE | 14 | ₹1095.80 | ₹1071.85 | ₹1247.64 | ₹15,341.20 |
 | BAJAJFINSV | 7 | ₹1991.70 | ₹1976.38 | ₹2239.91 | ₹13,941.90 |
 | ICICIBANK | 11 | ₹1421.40 | ₹1388.85 | ₹1544.08 | ₹15,635.40 |
+| SBIN | 14 | ₹1067.70 | ₹1023.81 | ₹1177.43 | ₹14,947.80 |
 
-## 📋 Trade History (28 closed | Win rate 54% | Total P&L ₹+4,251.17)
+## 📋 Trade History (29 closed | Win rate 52% | Total P&L ₹+4,051.17)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-08-11 06:01 | 🟢 BUY | SBIN | 14 | ₹1067.70 | — |  |
+| 2026-08-11 06:01 | 🔴 SELL | ULTRACEMCO | 1 | ₹11797.00 | ₹-200.00 | trailing_stop |
 | 2026-08-07 09:14 | 🟢 BUY | ICICIBANK | 11 | ₹1421.40 | — |  |
 | 2026-08-07 09:14 | 🔴 SELL | ICICIBANK | 10 | ₹1421.40 | ₹+411.00 | trailing_stop |
 | 2026-08-07 08:20 | 🟢 BUY | BAJAJFINSV | 7 | ₹1991.70 | — |  |
@@ -39,8 +41,6 @@
 | 2026-07-24 06:40 | 🟢 BUY | TECHM | 9 | ₹1537.70 | — |  |
 | 2026-07-24 06:40 | 🔴 SELL | TECHM | 10 | ₹1537.70 | ₹+410.00 | trailing_stop |
 | 2026-07-24 06:13 | 🟢 BUY | BAJFINANCE | 15 | ₹1007.20 | — |  |
-| 2026-07-24 06:13 | 🔴 SELL | BAJFINANCE | 14 | ₹1007.20 | ₹-25.20 | trailing_stop |
-| 2026-07-22 06:14 | 🟢 BUY | ULTRACEMCO | 1 | ₹11997.00 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
