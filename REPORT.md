@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-14 08:47 IST
+**Last updated:** 2026-08-14 09:20 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -16,7 +16,7 @@
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| EICHERMOT | 2 | ₹7638.00 | ₹7876.89 | ₹8406.00 | ₹15,276.00 |
+| EICHERMOT | 2 | ₹7638.00 | ₹7885.61 | ₹8406.00 | ₹15,276.00 |
 | BAJFINANCE | 14 | ₹1095.80 | ₹1071.85 | ₹1247.64 | ₹15,341.20 |
 | BAJAJFINSV | 7 | ₹1991.70 | ₹1976.38 | ₹2239.91 | ₹13,941.90 |
 | ICICIBANK | 11 | ₹1421.40 | ₹1388.85 | ₹1544.08 | ₹15,635.40 |
