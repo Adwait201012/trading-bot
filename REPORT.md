@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-28 17:43 IST
+**Last updated:** 2026-08-28 18:42 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,10 +8,10 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹104,242.97 |
+| Current Value | ₹104,215.07 |
 | Cash Available | ₹15,069.57 |
-| Total P&L | 🟢 ₹+4,242.97 (+4.24%) |
-| Drawdown from Peak | 🟢 -4.24% |
+| Total P&L | 🟢 ₹+4,215.07 (+4.22%) |
+| Drawdown from Peak | 🟢 -4.22% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
@@ -20,12 +20,14 @@
 | BAJFINANCE | 14 | ₹1095.80 | ₹1071.85 | ₹1247.64 | ₹15,341.20 |
 | BAJAJFINSV | 7 | ₹1991.70 | ₹1976.38 | ₹2239.91 | ₹13,941.90 |
 | ICICIBANK | 11 | ₹1421.40 | ₹1399.71 | ₹1544.08 | ₹15,635.40 |
-| TECHM | 9 | ₹1588.10 | ₹1591.67 | ₹1779.98 | ₹14,292.90 |
 | SBIN | 14 | ₹1049.00 | ₹1027.42 | ₹1145.39 | ₹14,686.00 |
+| TECHM | 9 | ₹1585.00 | ₹1513.41 | ₹1763.97 | ₹14,265.00 |
 
-## 📋 Trade History (32 closed | Win rate 50% | Total P&L ₹+4,242.97)
+## 📋 Trade History (33 closed | Win rate 48% | Total P&L ₹+4,215.07)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-08-28 18:42 | 🟢 BUY | TECHM | 9 | ₹1585.00 | — |  |
+| 2026-08-28 18:42 | 🔴 SELL | TECHM | 9 | ₹1585.00 | ₹-27.90 | trailing_stop |
 | 2026-08-19 04:53 | 🟢 BUY | SBIN | 14 | ₹1049.00 | — |  |
 | 2026-08-19 04:53 | 🔴 SELL | SBIN | 14 | ₹1049.00 | ₹-261.80 | trailing_stop |
 | 2026-08-18 04:20 | 🟢 BUY | TECHM | 9 | ₹1588.10 | — |  |
@@ -39,8 +41,6 @@
 | 2026-08-07 08:20 | 🟢 BUY | BAJAJFINSV | 7 | ₹1991.70 | — |  |
 | 2026-08-07 08:20 | 🔴 SELL | SBIN | 15 | ₹1114.90 | ₹+1507.50 | target |
 | 2026-08-07 05:23 | 🟢 BUY | BAJFINANCE | 14 | ₹1095.80 | — |  |
-| 2026-08-07 05:23 | 🔴 SELL | BAJFINANCE | 13 | ₹1095.80 | ₹-465.40 | trailing_stop |
-| 2026-07-31 06:32 | 🟢 BUY | BAJFINANCE | 13 | ₹1131.60 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
