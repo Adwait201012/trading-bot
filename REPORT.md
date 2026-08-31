@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-28 20:58 IST
+**Last updated:** 2026-08-31 10:06 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹104,215.07 |
-| Cash Available | ₹15,069.57 |
-| Total P&L | 🟢 ₹+4,215.07 (+4.22%) |
-| Drawdown from Peak | 🟢 -4.22% |
+| Current Value | ₹103,671.87 |
+| Cash Available | ₹14,267.57 |
+| Total P&L | 🟢 ₹+3,671.87 (+3.67%) |
+| Drawdown from Peak | 🟢 -3.67% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | EICHERMOT | 2 | ₹7638.00 | ₹7885.61 | ₹8406.00 | ₹15,276.00 |
-| BAJFINANCE | 14 | ₹1095.80 | ₹1071.85 | ₹1247.64 | ₹15,341.20 |
 | BAJAJFINSV | 7 | ₹1991.70 | ₹1976.38 | ₹2239.91 | ₹13,941.90 |
-| ICICIBANK | 11 | ₹1421.40 | ₹1399.71 | ₹1544.08 | ₹15,635.40 |
-| SBIN | 14 | ₹1049.00 | ₹1027.42 | ₹1145.39 | ₹14,686.00 |
-| TECHM | 9 | ₹1585.00 | ₹1537.45 | ₹1763.97 | ₹14,265.00 |
+| ICICIBANK | 11 | ₹1421.40 | ₹1410.38 | ₹1544.08 | ₹15,635.40 |
+| SBIN | 14 | ₹1049.00 | ₹1028.20 | ₹1145.39 | ₹14,686.00 |
+| TECHM | 9 | ₹1585.00 | ₹1579.16 | ₹1763.97 | ₹14,265.00 |
+| AXISBANK | 12 | ₹1300.00 | ₹1255.83 | ₹1410.42 | ₹15,600.00 |
 
-## 📋 Trade History (33 closed | Win rate 48% | Total P&L ₹+4,215.07)
+## 📋 Trade History (34 closed | Win rate 47% | Total P&L ₹+3,671.87)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-08-31 10:06 | 🟢 BUY | AXISBANK | 12 | ₹1300.00 | — |  |
+| 2026-08-31 10:06 | 🔴 SELL | BAJFINANCE | 14 | ₹1057.00 | ₹-543.20 | trailing_stop |
 | 2026-08-28 18:42 | 🟢 BUY | TECHM | 9 | ₹1585.00 | — |  |
 | 2026-08-28 18:42 | 🔴 SELL | TECHM | 9 | ₹1585.00 | ₹-27.90 | trailing_stop |
 | 2026-08-19 04:53 | 🟢 BUY | SBIN | 14 | ₹1049.00 | — |  |
@@ -39,8 +41,6 @@
 | 2026-08-07 09:14 | 🟢 BUY | ICICIBANK | 11 | ₹1421.40 | — |  |
 | 2026-08-07 09:14 | 🔴 SELL | ICICIBANK | 10 | ₹1421.40 | ₹+411.00 | trailing_stop |
 | 2026-08-07 08:20 | 🟢 BUY | BAJAJFINSV | 7 | ₹1991.70 | — |  |
-| 2026-08-07 08:20 | 🔴 SELL | SBIN | 15 | ₹1114.90 | ₹+1507.50 | target |
-| 2026-08-07 05:23 | 🟢 BUY | BAJFINANCE | 14 | ₹1095.80 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
