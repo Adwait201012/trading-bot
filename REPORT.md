@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-08-31 17:13 IST
+**Last updated:** 2026-09-01 08:55 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,30 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹103,671.87 |
-| Cash Available | ₹14,267.57 |
-| Total P&L | 🟢 ₹+3,671.87 (+3.67%) |
-| Drawdown from Peak | 🟢 -3.67% |
+| Current Value | ₹102,767.67 |
+| Cash Available | ₹15,778.27 |
+| Total P&L | 🟢 ₹+2,767.67 (+2.77%) |
+| Drawdown from Peak | 🟢 -2.77% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | EICHERMOT | 2 | ₹7638.00 | ₹7885.61 | ₹8406.00 | ₹15,276.00 |
-| BAJAJFINSV | 7 | ₹1991.70 | ₹1976.38 | ₹2239.91 | ₹13,941.90 |
 | ICICIBANK | 11 | ₹1421.40 | ₹1410.38 | ₹1544.08 | ₹15,635.40 |
-| SBIN | 14 | ₹1049.00 | ₹1028.20 | ₹1145.39 | ₹14,686.00 |
-| TECHM | 9 | ₹1585.00 | ₹1579.16 | ₹1763.97 | ₹14,265.00 |
-| AXISBANK | 12 | ₹1300.00 | ₹1261.00 | ₹1410.42 | ₹15,600.00 |
+| TECHM | 9 | ₹1585.00 | ₹1584.88 | ₹1763.97 | ₹14,265.00 |
+| BAJAJFINSV | 7 | ₹1964.70 | ₹1888.69 | ₹2154.73 | ₹13,752.90 |
+| HCLTECH | 11 | ₹1353.50 | ₹1288.29 | ₹1516.53 | ₹14,888.50 |
+| GRASIM | 4 | ₹3292.90 | ₹3158.12 | ₹3629.84 | ₹13,171.60 |
 
-## 📋 Trade History (34 closed | Win rate 47% | Total P&L ₹+3,671.87)
+## 📋 Trade History (37 closed | Win rate 43% | Total P&L ₹+2,767.67)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-09-01 08:55 | 🟢 BUY | GRASIM | 4 | ₹3292.90 | — |  |
+| 2026-09-01 08:55 | 🟢 BUY | HCLTECH | 11 | ₹1353.50 | — |  |
+| 2026-09-01 08:55 | 🟢 BUY | BAJAJFINSV | 7 | ₹1964.70 | — |  |
+| 2026-09-01 08:55 | 🔴 SELL | SBIN | 14 | ₹1031.00 | ₹-252.00 | signal |
+| 2026-09-01 08:55 | 🔴 SELL | AXISBANK | 12 | ₹1261.40 | ₹-463.20 | signal |
+| 2026-09-01 08:55 | 🔴 SELL | BAJAJFINSV | 7 | ₹1964.70 | ₹-189.00 | trailing_stop |
 | 2026-08-31 10:06 | 🟢 BUY | AXISBANK | 12 | ₹1300.00 | — |  |
 | 2026-08-31 10:06 | 🔴 SELL | BAJFINANCE | 14 | ₹1057.00 | ₹-543.20 | trailing_stop |
 | 2026-08-28 18:42 | 🟢 BUY | TECHM | 9 | ₹1585.00 | — |  |
@@ -35,12 +41,6 @@
 | 2026-08-18 04:20 | 🟢 BUY | TECHM | 9 | ₹1588.10 | — |  |
 | 2026-08-18 04:20 | 🔴 SELL | TECHM | 9 | ₹1588.10 | ₹-334.80 | trailing_stop |
 | 2026-08-12 06:39 | 🟢 BUY | TECHM | 9 | ₹1625.30 | — |  |
-| 2026-08-12 06:39 | 🔴 SELL | TECHM | 9 | ₹1625.30 | ₹+788.40 | trailing_stop |
-| 2026-08-11 06:01 | 🟢 BUY | SBIN | 14 | ₹1067.70 | — |  |
-| 2026-08-11 06:01 | 🔴 SELL | ULTRACEMCO | 1 | ₹11797.00 | ₹-200.00 | trailing_stop |
-| 2026-08-07 09:14 | 🟢 BUY | ICICIBANK | 11 | ₹1421.40 | — |  |
-| 2026-08-07 09:14 | 🔴 SELL | ICICIBANK | 10 | ₹1421.40 | ₹+411.00 | trailing_stop |
-| 2026-08-07 08:20 | 🟢 BUY | BAJAJFINSV | 7 | ₹1991.70 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
