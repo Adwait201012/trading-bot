@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-02 09:04 IST
+**Last updated:** 2026-09-02 09:34 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -18,10 +18,10 @@
 |---|---|---|---|---|---|
 | ICICIBANK | 11 | ₹1421.40 | ₹1410.38 | ₹1544.08 | ₹15,635.40 |
 | TECHM | 9 | ₹1585.00 | ₹1588.86 | ₹1763.97 | ₹14,265.00 |
-| BAJAJFINSV | 7 | ₹1964.70 | ₹1920.50 | ₹2154.73 | ₹13,752.90 |
+| BAJAJFINSV | 7 | ₹1964.70 | ₹1922.06 | ₹2154.73 | ₹13,752.90 |
 | HCLTECH | 11 | ₹1353.50 | ₹1311.25 | ₹1516.53 | ₹14,888.50 |
 | GRASIM | 4 | ₹3292.90 | ₹3205.85 | ₹3629.84 | ₹13,171.60 |
-| BAJAJ-AUTO | 1 | ₹12051.00 | ₹11723.42 | ₹13224.17 | ₹12,051.00 |
+| BAJAJ-AUTO | 1 | ₹12051.00 | ₹11760.28 | ₹13224.17 | ₹12,051.00 |
 
 ## 📋 Trade History (38 closed | Win rate 42% | Total P&L ₹+2,715.67)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
