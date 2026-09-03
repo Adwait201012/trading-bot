@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-03 09:12 IST
+**Last updated:** 2026-09-03 09:44 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,7 +20,7 @@
 | TECHM | 9 | ₹1585.00 | ₹1588.86 | ₹1763.97 | ₹14,265.00 |
 | BAJAJFINSV | 7 | ₹1964.70 | ₹1930.30 | ₹2154.73 | ₹13,752.90 |
 | HCLTECH | 11 | ₹1353.50 | ₹1311.25 | ₹1516.53 | ₹14,888.50 |
-| GRASIM | 4 | ₹3292.90 | ₹3205.85 | ₹3629.84 | ₹13,171.60 |
+| GRASIM | 4 | ₹3292.90 | ₹3221.37 | ₹3629.84 | ₹13,171.60 |
 | BAJAJ-AUTO | 1 | ₹12051.00 | ₹11766.10 | ₹13224.17 | ₹12,051.00 |
 
 ## 📋 Trade History (38 closed | Win rate 42% | Total P&L ₹+2,715.67)
