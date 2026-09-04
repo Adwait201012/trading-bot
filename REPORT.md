@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-04 08:14 IST
+**Last updated:** 2026-09-04 08:52 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | BAJAJFINSV | 7 | ₹1964.70 | ₹1932.34 | ₹2154.73 | ₹13,752.90 |
 | GRASIM | 4 | ₹3292.90 | ₹3221.37 | ₹3629.84 | ₹13,171.60 |
 | BAJAJ-AUTO | 1 | ₹12051.00 | ₹11766.10 | ₹13224.17 | ₹12,051.00 |
-| KOTAKBANK | 36 | ₹424.30 | ₹409.79 | ₹460.58 | ₹15,274.80 |
+| KOTAKBANK | 36 | ₹424.30 | ₹411.62 | ₹460.58 | ₹15,274.80 |
 
 ## 📋 Trade History (39 closed | Win rate 41% | Total P&L ₹+2,127.17)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
