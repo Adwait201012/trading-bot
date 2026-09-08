@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-07 15:14 IST
+**Last updated:** 2026-09-08 08:20 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹102,160.47 |
-| Cash Available | ₹17,976.47 |
-| Total P&L | 🟢 ₹+2,160.47 (+2.16%) |
-| Drawdown from Peak | 🟢 -2.16% |
+| Current Value | ₹101,929.47 |
+| Cash Available | ₹19,376.87 |
+| Total P&L | 🟢 ₹+1,929.47 (+1.93%) |
+| Drawdown from Peak | 🟢 -1.93% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| ICICIBANK | 11 | ₹1421.40 | ₹1410.38 | ₹1544.08 | ₹15,635.40 |
 | BAJAJFINSV | 7 | ₹1964.70 | ₹1932.34 | ₹2154.73 | ₹13,752.90 |
 | GRASIM | 4 | ₹3292.90 | ₹3224.86 | ₹3629.84 | ₹13,171.60 |
 | BAJAJ-AUTO | 1 | ₹12051.00 | ₹11766.10 | ₹13224.17 | ₹12,051.00 |
 | KOTAKBANK | 36 | ₹424.30 | ₹412.01 | ₹460.58 | ₹15,274.80 |
 | TECHM | 9 | ₹1588.70 | ₹1548.99 | ₹1770.37 | ₹14,298.30 |
+| ICICIBANK | 10 | ₹1400.40 | ₹1356.48 | ₹1510.21 | ₹14,004.00 |
 
-## 📋 Trade History (40 closed | Win rate 42% | Total P&L ₹+2,160.47)
+## 📋 Trade History (41 closed | Win rate 41% | Total P&L ₹+1,929.47)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-09-08 08:20 | 🟢 BUY | ICICIBANK | 10 | ₹1400.40 | — |  |
+| 2026-09-08 08:20 | 🔴 SELL | ICICIBANK | 11 | ₹1400.40 | ₹-231.00 | trailing_stop |
 | 2026-09-04 09:04 | 🟢 BUY | TECHM | 9 | ₹1588.70 | — |  |
 | 2026-09-04 09:04 | 🔴 SELL | TECHM | 9 | ₹1588.70 | ₹+33.30 | trailing_stop |
 | 2026-09-04 08:14 | 🟢 BUY | KOTAKBANK | 36 | ₹424.30 | — |  |
@@ -39,8 +41,6 @@
 | 2026-09-01 08:55 | 🔴 SELL | AXISBANK | 12 | ₹1261.40 | ₹-463.20 | signal |
 | 2026-09-01 08:55 | 🔴 SELL | BAJAJFINSV | 7 | ₹1964.70 | ₹-189.00 | trailing_stop |
 | 2026-08-31 10:06 | 🟢 BUY | AXISBANK | 12 | ₹1300.00 | — |  |
-| 2026-08-31 10:06 | 🔴 SELL | BAJFINANCE | 14 | ₹1057.00 | ₹-543.20 | trailing_stop |
-| 2026-08-28 18:42 | 🟢 BUY | TECHM | 9 | ₹1585.00 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
