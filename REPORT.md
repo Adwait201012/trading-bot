@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-09 08:23 IST
+**Last updated:** 2026-09-09 08:59 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | BAJAJ-AUTO | 1 | ₹12051.00 | ₹11766.10 | ₹13224.17 | ₹12,051.00 |
 | KOTAKBANK | 36 | ₹424.30 | ₹412.01 | ₹460.58 | ₹15,274.80 |
 | ICICIBANK | 10 | ₹1400.40 | ₹1359.45 | ₹1510.21 | ₹14,004.00 |
-| ADANIENT | 4 | ₹3101.00 | ₹2929.84 | ₹3528.90 | ₹12,404.00 |
+| ADANIENT | 4 | ₹3101.00 | ₹3010.49 | ₹3528.90 | ₹12,404.00 |
 
 ## 📋 Trade History (43 closed | Win rate 40% | Total P&L ₹+1,158.17)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
