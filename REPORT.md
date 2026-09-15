@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-14 15:59 IST
+**Last updated:** 2026-09-15 08:58 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,28 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹100,644.37 |
-| Cash Available | ₹20,499.87 |
-| Total P&L | 🟢 ₹+644.37 (+0.64%) |
-| Drawdown from Peak | 🟢 -0.64% |
+| Current Value | ₹98,278.07 |
+| Cash Available | ₹56,407.27 |
+| Total P&L | 🔴 ₹-1,721.93 (-1.72%) |
+| Drawdown from Peak | 🟢 1.72% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| GRASIM | 4 | ₹3292.90 | ₹3224.86 | ₹3629.84 | ₹13,171.60 |
 | KOTAKBANK | 36 | ₹424.30 | ₹412.01 | ₹460.58 | ₹15,274.80 |
-| ICICIBANK | 10 | ₹1400.40 | ₹1359.45 | ₹1510.21 | ₹14,004.00 |
-| ADANIENT | 4 | ₹3101.00 | ₹3011.56 | ₹3528.90 | ₹12,404.00 |
-| BAJAJFINSV | 7 | ₹1932.30 | ₹1882.29 | ₹2106.97 | ₹13,526.10 |
-| BAJAJ-AUTO | 1 | ₹11764.00 | ₹11436.30 | ₹12853.48 | ₹11,764.00 |
+| GRASIM | 4 | ₹3190.80 | ₹3057.64 | ₹3523.69 | ₹12,763.20 |
+| ADANIPORTS | 8 | ₹1729.10 | ₹1649.46 | ₹1928.19 | ₹13,832.80 |
 
-## 📋 Trade History (45 closed | Win rate 38% | Total P&L ₹+644.37)
+## 📋 Trade History (50 closed | Win rate 34% | Total P&L ₹-1,721.93)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-09-15 08:58 | 🟢 BUY | ADANIPORTS | 8 | ₹1729.10 | — |  |
+| 2026-09-15 08:58 | 🟢 BUY | GRASIM | 4 | ₹3190.80 | — |  |
+| 2026-09-15 08:58 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹11425.00 | ₹-339.00 | trailing_stop |
+| 2026-09-15 08:58 | 🔴 SELL | BAJAJFINSV | 7 | ₹1862.00 | ₹-492.10 | trailing_stop |
+| 2026-09-15 08:58 | 🔴 SELL | ADANIENT | 4 | ₹2937.30 | ₹-654.80 | trailing_stop |
+| 2026-09-15 08:58 | 🔴 SELL | ICICIBANK | 10 | ₹1353.20 | ₹-472.00 | trailing_stop |
+| 2026-09-15 08:58 | 🔴 SELL | GRASIM | 4 | ₹3190.80 | ₹-408.40 | trailing_stop |
 | 2026-09-09 09:12 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹11764.00 | — |  |
 | 2026-09-09 09:12 | 🟢 BUY | BAJAJFINSV | 7 | ₹1932.30 | — |  |
 | 2026-09-09 09:12 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹11764.00 | ₹-287.00 | trailing_stop |
@@ -34,13 +38,6 @@
 | 2026-09-09 08:23 | 🔴 SELL | TECHM | 9 | ₹1503.00 | ₹-383.40 | trailing_stop |
 | 2026-09-08 09:37 | 🟢 BUY | TECHM | 9 | ₹1545.60 | — |  |
 | 2026-09-08 09:37 | 🔴 SELL | TECHM | 9 | ₹1545.60 | ₹-387.90 | trailing_stop |
-| 2026-09-08 08:20 | 🟢 BUY | ICICIBANK | 10 | ₹1400.40 | — |  |
-| 2026-09-08 08:20 | 🔴 SELL | ICICIBANK | 11 | ₹1400.40 | ₹-231.00 | trailing_stop |
-| 2026-09-04 09:04 | 🟢 BUY | TECHM | 9 | ₹1588.70 | — |  |
-| 2026-09-04 09:04 | 🔴 SELL | TECHM | 9 | ₹1588.70 | ₹+33.30 | trailing_stop |
-| 2026-09-04 08:14 | 🟢 BUY | KOTAKBANK | 36 | ₹424.30 | — |  |
-| 2026-09-04 08:14 | 🔴 SELL | HCLTECH | 11 | ₹1300.00 | ₹-588.50 | trailing_stop |
-| 2026-09-02 08:48 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹12051.00 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
