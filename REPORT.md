@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-17 08:55 IST
+**Last updated:** 2026-09-17 09:28 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -19,7 +19,7 @@
 | GRASIM | 4 | ₹3190.80 | ₹3092.17 | ₹3523.69 | ₹12,763.20 |
 | ADANIPORTS | 8 | ₹1729.10 | ₹1682.37 | ₹1928.19 | ₹13,832.80 |
 | KOTAKBANK | 35 | ₹409.80 | ₹404.05 | ₹445.96 | ₹14,343.00 |
-| EICHERMOT | 1 | ₹7452.50 | ₹7302.16 | ₹8167.19 | ₹7,452.50 |
+| EICHERMOT | 1 | ₹7452.50 | ₹7323.02 | ₹8167.19 | ₹7,452.50 |
 
 ## 📋 Trade History (51 closed | Win rate 33% | Total P&L ₹-2,243.93)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
