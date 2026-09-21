@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-21 12:48 IST
+**Last updated:** 2026-09-21 13:21 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | KOTAKBANK | 35 | ₹409.80 | ₹405.99 | ₹445.96 | ₹14,343.00 |
 | EICHERMOT | 1 | ₹7452.50 | ₹7323.02 | ₹8167.19 | ₹7,452.50 |
 | HDFCBANK | 20 | ₹730.50 | ₹719.74 | ₹794.97 | ₹14,610.00 |
-| AXISBANK | 11 | ₹1250.00 | ₹1207.15 | ₹1357.14 | ₹13,750.00 |
+| AXISBANK | 11 | ₹1250.00 | ₹1212.50 | ₹1357.14 | ₹13,750.00 |
 
 ## 📋 Trade History (51 closed | Win rate 33% | Total P&L ₹-2,243.93)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
