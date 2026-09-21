@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-21 11:07 IST
+**Last updated:** 2026-09-21 12:48 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -9,7 +9,7 @@
 |---|---|
 | Starting Capital | ₹100,000.00 |
 | Current Value | ₹97,756.07 |
-| Cash Available | ₹34,754.57 |
+| Cash Available | ₹21,004.57 |
 | Total P&L | 🔴 ₹-2,243.93 (-2.24%) |
 | Drawdown from Peak | 🟡 2.24% |
 
@@ -21,10 +21,12 @@
 | KOTAKBANK | 35 | ₹409.80 | ₹405.99 | ₹445.96 | ₹14,343.00 |
 | EICHERMOT | 1 | ₹7452.50 | ₹7323.02 | ₹8167.19 | ₹7,452.50 |
 | HDFCBANK | 20 | ₹730.50 | ₹719.74 | ₹794.97 | ₹14,610.00 |
+| AXISBANK | 11 | ₹1250.00 | ₹1207.15 | ₹1357.14 | ₹13,750.00 |
 
 ## 📋 Trade History (51 closed | Win rate 33% | Total P&L ₹-2,243.93)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-09-21 12:48 | 🟢 BUY | AXISBANK | 11 | ₹1250.00 | — |  |
 | 2026-09-18 08:30 | 🟢 BUY | HDFCBANK | 20 | ₹730.50 | — |  |
 | 2026-09-15 13:33 | 🟢 BUY | EICHERMOT | 1 | ₹7452.50 | — |  |
 | 2026-09-15 10:02 | 🟢 BUY | KOTAKBANK | 35 | ₹409.80 | — |  |
@@ -39,7 +41,6 @@
 | 2026-09-09 09:12 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹11764.00 | — |  |
 | 2026-09-09 09:12 | 🟢 BUY | BAJAJFINSV | 7 | ₹1932.30 | — |  |
 | 2026-09-09 09:12 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹11764.00 | ₹-287.00 | trailing_stop |
-| 2026-09-09 09:12 | 🔴 SELL | BAJAJFINSV | 7 | ₹1932.30 | ₹-226.80 | trailing_stop |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
