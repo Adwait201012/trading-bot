@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-18 13:50 IST
+**Last updated:** 2026-09-21 09:18 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,7 +20,7 @@
 | ADANIPORTS | 8 | ₹1729.10 | ₹1769.28 | ₹1928.19 | ₹13,832.80 |
 | KOTAKBANK | 35 | ₹409.80 | ₹405.99 | ₹445.96 | ₹14,343.00 |
 | EICHERMOT | 1 | ₹7452.50 | ₹7323.02 | ₹8167.19 | ₹7,452.50 |
-| HDFCBANK | 20 | ₹730.50 | ₹710.14 | ₹794.97 | ₹14,610.00 |
+| HDFCBANK | 20 | ₹730.50 | ₹719.74 | ₹794.97 | ₹14,610.00 |
 
 ## 📋 Trade History (51 closed | Win rate 33% | Total P&L ₹-2,243.93)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
