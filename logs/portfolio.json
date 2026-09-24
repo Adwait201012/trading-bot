@@ -18,14 +18,6 @@
       "trailing_stop": 1769.28,
       "time": "2026-09-15 08:58:34.508717"
     },
-    "KOTAKBANK.NS": {
-      "qty": 35,
-      "avg_price": 409.79998779296875,
-      "stop": 395.3351468352035,
-      "target": 445.96209018738193,
-      "trailing_stop": 405.99348815917966,
-      "time": "2026-09-15 10:02:16.654416"
-    },
     "EICHERMOT.NS": {
       "qty": 1,
       "avg_price": 7452.5,
@@ -41,6 +33,14 @@
       "target": 794.9692430567057,
       "trailing_stop": 721.68,
       "time": "2026-09-18 08:30:10.949131"
+    },
+    "KOTAKBANK.NS": {
+      "qty": 35,
+      "avg_price": 405.25,
+      "stop": 391.63556133037906,
+      "target": 439.2860966740523,
+      "trailing_stop": 391.63556133037906,
+      "time": "2026-09-24 09:57:03.262870"
     }
   },
   "trades": [
@@ -1019,6 +1019,24 @@
       "pnl": -778.8,
       "reason": "trailing_stop",
       "time": "2026-09-24 08:45:38.418094"
+    },
+    {
+      "action": "SELL",
+      "symbol": "KOTAKBANK.NS",
+      "qty": 35,
+      "price": 405.25,
+      "total": 14183.75,
+      "pnl": -159.25,
+      "reason": "trailing_stop",
+      "time": "2026-09-24 09:57:03.065168"
+    },
+    {
+      "action": "BUY",
+      "symbol": "KOTAKBANK.NS",
+      "qty": 35,
+      "price": 405.25,
+      "total": 14183.75,
+      "time": "2026-09-24 09:57:03.262875"
     }
   ],
   "created_at": "2026-06-02"
