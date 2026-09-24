@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-23 14:25 IST
+**Last updated:** 2026-09-24 08:45 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,10 +8,10 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹97,756.07 |
-| Cash Available | ₹21,004.57 |
-| Total P&L | 🔴 ₹-2,243.93 (-2.24%) |
-| Drawdown from Peak | 🟡 2.24% |
+| Current Value | ₹96,977.27 |
+| Cash Available | ₹33,975.77 |
+| Total P&L | 🔴 ₹-3,022.73 (-3.02%) |
+| Drawdown from Peak | 🟡 3.02% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
@@ -21,11 +21,11 @@
 | KOTAKBANK | 35 | ₹409.80 | ₹405.99 | ₹445.96 | ₹14,343.00 |
 | EICHERMOT | 1 | ₹7452.50 | ₹7323.02 | ₹8167.19 | ₹7,452.50 |
 | HDFCBANK | 20 | ₹730.50 | ₹721.68 | ₹794.97 | ₹14,610.00 |
-| AXISBANK | 11 | ₹1250.00 | ₹1212.50 | ₹1357.14 | ₹13,750.00 |
 
-## 📋 Trade History (51 closed | Win rate 33% | Total P&L ₹-2,243.93)
+## 📋 Trade History (52 closed | Win rate 33% | Total P&L ₹-3,022.73)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-09-24 08:45 | 🔴 SELL | AXISBANK | 11 | ₹1179.20 | ₹-778.80 | trailing_stop |
 | 2026-09-21 12:48 | 🟢 BUY | AXISBANK | 11 | ₹1250.00 | — |  |
 | 2026-09-18 08:30 | 🟢 BUY | HDFCBANK | 20 | ₹730.50 | — |  |
 | 2026-09-15 13:33 | 🟢 BUY | EICHERMOT | 1 | ₹7452.50 | — |  |
@@ -40,7 +40,6 @@
 | 2026-09-15 08:58 | 🔴 SELL | GRASIM | 4 | ₹3190.80 | ₹-408.40 | trailing_stop |
 | 2026-09-09 09:12 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹11764.00 | — |  |
 | 2026-09-09 09:12 | 🟢 BUY | BAJAJFINSV | 7 | ₹1932.30 | — |  |
-| 2026-09-09 09:12 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹11764.00 | ₹-287.00 | trailing_stop |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
