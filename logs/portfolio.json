@@ -1,5 +1,5 @@
 {
-  "cash": 33498.268005371094,
+  "cash": 55092.76776123047,
   "peak_value": 100000,
   "positions": {
     "GRASIM.NS": {
@@ -10,30 +10,6 @@
       "trailing_stop": 3112.9239526367187,
       "time": "2026-09-15 08:58:34.474494"
     },
-    "ADANIPORTS.NS": {
-      "qty": 8,
-      "avg_price": 1729.0999755859375,
-      "stop": 1649.4631141946973,
-      "target": 1928.192129064038,
-      "trailing_stop": 1769.28,
-      "time": "2026-09-15 08:58:34.508717"
-    },
-    "EICHERMOT.NS": {
-      "qty": 1,
-      "avg_price": 7452.5,
-      "stop": 7166.625518610473,
-      "target": 8167.186203473819,
-      "trailing_stop": 7323.015,
-      "time": "2026-09-15 13:33:09.503578"
-    },
-    "HDFCBANK.NS": {
-      "qty": 20,
-      "avg_price": 730.5,
-      "stop": 704.7123027773177,
-      "target": 794.9692430567057,
-      "trailing_stop": 721.68,
-      "time": "2026-09-18 08:30:10.949131"
-    },
     "KOTAKBANK.NS": {
       "qty": 36,
       "avg_price": 404.0,
@@ -41,6 +17,14 @@
       "target": 438.6942413713351,
       "trailing_stop": 391.88,
       "time": "2026-09-25 10:09:58.925082"
+    },
+    "ADANIPORTS.NS": {
+      "qty": 8,
+      "avg_price": 1743.699951171875,
+      "stop": 1667.2116400780528,
+      "target": 1934.9207289064302,
+      "trailing_stop": 1667.2116400780528,
+      "time": "2026-09-28 10:10:38.119576"
     }
   },
   "trades": [
@@ -1055,6 +1039,44 @@
       "price": 404.0,
       "total": 14544.0,
       "time": "2026-09-25 10:09:58.925089"
+    },
+    {
+      "action": "SELL",
+      "symbol": "ADANIPORTS.NS",
+      "qty": 8,
+      "price": 1743.699951171875,
+      "total": 13949.599609375,
+      "pnl": 116.8,
+      "reason": "trailing_stop",
+      "time": "2026-09-28 10:10:37.390928"
+    },
+    {
+      "action": "SELL",
+      "symbol": "EICHERMOT.NS",
+      "qty": 1,
+      "price": 7213.5,
+      "total": 7213.5,
+      "pnl": -239.0,
+      "reason": "trailing_stop",
+      "time": "2026-09-28 10:10:37.629186"
+    },
+    {
+      "action": "SELL",
+      "symbol": "HDFCBANK.NS",
+      "qty": 20,
+      "price": 719.0499877929688,
+      "total": 14380.999755859375,
+      "pnl": -229.0,
+      "reason": "trailing_stop",
+      "time": "2026-09-28 10:10:37.842719"
+    },
+    {
+      "action": "BUY",
+      "symbol": "ADANIPORTS.NS",
+      "qty": 8,
+      "price": 1743.699951171875,
+      "total": 13949.599609375,
+      "time": "2026-09-28 10:10:38.119582"
     }
   ],
   "created_at": "2026-06-02"
