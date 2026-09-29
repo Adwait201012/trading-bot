@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-09-29 12:53 IST
+**Last updated:** 2026-09-29 13:19 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -18,7 +18,7 @@
 |---|---|---|---|---|---|
 | KOTAKBANK | 36 | ₹404.00 | ₹393.82 | ₹438.69 | ₹14,544.00 |
 | ADANIPORTS | 8 | ₹1743.70 | ₹1767.34 | ₹1934.92 | ₹13,949.60 |
-| BAJAJ-AUTO | 1 | ₹10811.00 | ₹10413.12 | ₹11805.70 | ₹10,811.00 |
+| BAJAJ-AUTO | 1 | ₹10811.00 | ₹10486.67 | ₹11805.70 | ₹10,811.00 |
 
 ## 📋 Trade History (58 closed | Win rate 31% | Total P&L ₹-4,013.63)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
