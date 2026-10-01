@@ -1,5 +1,5 @@
 {
-  "cash": 56681.76776123047,
+  "cash": 80629.16815185547,
   "peak_value": 100000,
   "positions": {
     "KOTAKBANK.NS": {
@@ -7,24 +7,8 @@
       "avg_price": 404.0,
       "stop": 390.12230345146594,
       "target": 438.6942413713351,
-      "trailing_stop": 404.49,
+      "trailing_stop": 405.7995059204102,
       "time": "2026-09-25 10:09:58.925082"
-    },
-    "ADANIPORTS.NS": {
-      "qty": 8,
-      "avg_price": 1743.699951171875,
-      "stop": 1667.2116400780528,
-      "target": 1934.9207289064302,
-      "trailing_stop": 1767.34,
-      "time": "2026-09-28 10:10:38.119576"
-    },
-    "BAJAJ-AUTO.NS": {
-      "qty": 1,
-      "avg_price": 10811.0,
-      "stop": 10413.119947746702,
-      "target": 11805.700130633246,
-      "trailing_stop": 10572.03,
-      "time": "2026-09-29 12:53:25.528346"
     }
   },
   "trades": [
@@ -1095,6 +1079,26 @@
       "price": 10811.0,
       "total": 10811.0,
       "time": "2026-09-29 12:53:25.528352"
+    },
+    {
+      "action": "SELL",
+      "symbol": "ADANIPORTS.NS",
+      "qty": 8,
+      "price": 1737.800048828125,
+      "total": 13902.400390625,
+      "pnl": -47.2,
+      "reason": "trailing_stop",
+      "time": "2026-10-01 10:28:06.524071"
+    },
+    {
+      "action": "SELL",
+      "symbol": "BAJAJ-AUTO.NS",
+      "qty": 1,
+      "price": 10045.0,
+      "total": 10045.0,
+      "pnl": -766.0,
+      "reason": "trailing_stop",
+      "time": "2026-10-01 10:28:06.528338"
     }
   ],
   "created_at": "2026-06-02"
