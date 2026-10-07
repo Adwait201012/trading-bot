@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-06 16:16 IST
+**Last updated:** 2026-10-07 10:35 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,20 +8,22 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹95,173.17 |
-| Cash Available | ₹66,437.17 |
-| Total P&L | 🔴 ₹-4,826.83 (-4.83%) |
-| Drawdown from Peak | 🟡 4.83% |
+| Current Value | ₹96,469.17 |
+| Cash Available | ₹68,702.17 |
+| Total P&L | 🔴 ₹-3,530.83 (-3.53%) |
+| Drawdown from Peak | 🟡 3.53% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| KOTAKBANK | 36 | ₹404.00 | ₹418.94 | ₹438.69 | ₹14,544.00 |
 | ADANIPORTS | 8 | ₹1774.00 | ₹1729.90 | ₹1996.43 | ₹14,192.00 |
+| ICICIBANK | 10 | ₹1357.50 | ₹1315.56 | ₹1462.34 | ₹13,575.00 |
 
-## 📋 Trade History (60 closed | Win rate 30% | Total P&L ₹-4,826.83)
+## 📋 Trade History (61 closed | Win rate 31% | Total P&L ₹-3,530.83)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-10-07 10:35 | 🟢 BUY | ICICIBANK | 10 | ₹1357.50 | — |  |
+| 2026-10-07 10:35 | 🔴 SELL | KOTAKBANK | 36 | ₹440.00 | ₹+1296.00 | target |
 | 2026-10-05 10:51 | 🟢 BUY | ADANIPORTS | 8 | ₹1774.00 | — |  |
 | 2026-10-01 10:28 | 🔴 SELL | BAJAJ-AUTO | 1 | ₹10045.00 | ₹-766.00 | trailing_stop |
 | 2026-10-01 10:28 | 🔴 SELL | ADANIPORTS | 8 | ₹1737.80 | ₹-47.20 | trailing_stop |
@@ -35,8 +37,6 @@
 | 2026-09-25 09:38 | 🔴 SELL | KOTAKBANK | 35 | ₹401.90 | ₹-117.25 | signal |
 | 2026-09-24 09:57 | 🟢 BUY | KOTAKBANK | 35 | ₹405.25 | — |  |
 | 2026-09-24 09:57 | 🔴 SELL | KOTAKBANK | 35 | ₹405.25 | ₹-159.25 | trailing_stop |
-| 2026-09-24 08:45 | 🔴 SELL | AXISBANK | 11 | ₹1179.20 | ₹-778.80 | trailing_stop |
-| 2026-09-21 12:48 | 🟢 BUY | AXISBANK | 11 | ₹1250.00 | — |  |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
