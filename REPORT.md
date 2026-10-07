@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-07 10:35 IST
+**Last updated:** 2026-10-07 11:07 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -17,7 +17,7 @@
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | ADANIPORTS | 8 | ₹1774.00 | ₹1729.90 | ₹1996.43 | ₹14,192.00 |
-| ICICIBANK | 10 | ₹1357.50 | ₹1315.56 | ₹1462.34 | ₹13,575.00 |
+| ICICIBANK | 10 | ₹1357.50 | ₹1316.78 | ₹1462.34 | ₹13,575.00 |
 
 ## 📋 Trade History (61 closed | Win rate 31% | Total P&L ₹-3,530.83)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
