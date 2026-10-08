@@ -1,15 +1,7 @@
 {
-  "cash": 68702.16815185547,
+  "cash": 41367.16815185547,
   "peak_value": 100000,
   "positions": {
-    "ADANIPORTS.NS": {
-      "qty": 8,
-      "avg_price": 1774.0,
-      "stop": 1685.0282587606496,
-      "target": 1996.4293530983764,
-      "trailing_stop": 1729.8980236816406,
-      "time": "2026-10-05 10:51:36.460679"
-    },
     "ICICIBANK.NS": {
       "qty": 10,
       "avg_price": 1357.5,
@@ -17,6 +9,30 @@
       "target": 1462.3389984534797,
       "trailing_stop": 1316.775,
       "time": "2026-10-07 10:35:10.620758"
+    },
+    "KOTAKBANK.NS": {
+      "qty": 33,
+      "avg_price": 435.0,
+      "stop": 416.58497466950325,
+      "target": 481.0375633262418,
+      "trailing_stop": 416.58497466950325,
+      "time": "2026-10-08 10:56:23.001772"
+    },
+    "ADANIENT.NS": {
+      "qty": 5,
+      "avg_price": 2596.0,
+      "stop": 2417.4749830853834,
+      "target": 3042.312542286542,
+      "trailing_stop": 2417.4749830853834,
+      "time": "2026-10-08 10:56:23.033033"
+    },
+    "ADANIPORTS.NS": {
+      "qty": 8,
+      "avg_price": 1708.0,
+      "stop": 1621.0424403533966,
+      "target": 1925.3938991165082,
+      "trailing_stop": 1621.0424403533966,
+      "time": "2026-10-08 10:56:23.078032"
     }
   },
   "trades": [
@@ -1133,6 +1149,40 @@
       "price": 1357.5,
       "total": 13575.0,
       "time": "2026-10-07 10:35:10.620763"
+    },
+    {
+      "action": "SELL",
+      "symbol": "ADANIPORTS.NS",
+      "qty": 8,
+      "price": 1708.0,
+      "total": 13664.0,
+      "pnl": -528.0,
+      "reason": "trailing_stop",
+      "time": "2026-10-08 10:56:22.961927"
+    },
+    {
+      "action": "BUY",
+      "symbol": "KOTAKBANK.NS",
+      "qty": 33,
+      "price": 435.0,
+      "total": 14355.0,
+      "time": "2026-10-08 10:56:23.001779"
+    },
+    {
+      "action": "BUY",
+      "symbol": "ADANIENT.NS",
+      "qty": 5,
+      "price": 2596.0,
+      "total": 12980.0,
+      "time": "2026-10-08 10:56:23.033039"
+    },
+    {
+      "action": "BUY",
+      "symbol": "ADANIPORTS.NS",
+      "qty": 8,
+      "price": 1708.0,
+      "total": 13664.0,
+      "time": "2026-10-08 10:56:23.078039"
     }
   ],
   "created_at": "2026-06-02"
