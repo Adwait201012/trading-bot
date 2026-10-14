@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-13 17:07 IST
+**Last updated:** 2026-10-14 09:01 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹95,941.17 |
-| Cash Available | ₹14,491.37 |
-| Total P&L | 🔴 ₹-4,058.83 (-4.06%) |
-| Drawdown from Peak | 🟡 4.06% |
+| Current Value | ₹96,164.97 |
+| Cash Available | ₹14,112.22 |
+| Total P&L | 🔴 ₹-3,835.03 (-3.84%) |
+| Drawdown from Peak | 🟡 3.84% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | ICICIBANK | 10 | ₹1357.50 | ₹1319.39 | ₹1462.34 | ₹13,575.00 |
 | KOTAKBANK | 33 | ₹435.00 | ₹430.10 | ₹481.04 | ₹14,355.00 |
-| ADANIENT | 5 | ₹2596.00 | ₹2614.15 | ₹3042.31 | ₹12,980.00 |
+| ADANIENT | 5 | ₹2596.00 | ₹2642.86 | ₹3042.31 | ₹12,980.00 |
 | ADANIPORTS | 8 | ₹1708.00 | ₹1710.11 | ₹1925.39 | ₹13,664.00 |
-| TCS | 6 | ₹2269.30 | ₹2201.22 | ₹2602.00 | ₹13,615.80 |
-| HCLTECH | 10 | ₹1326.00 | ₹1286.22 | ₹1528.29 | ₹13,260.00 |
+| HCLTECH | 10 | ₹1326.00 | ₹1292.82 | ₹1528.29 | ₹13,260.00 |
+| INFY | 13 | ₹1093.75 | ₹1035.74 | ₹1238.77 | ₹14,218.75 |
 
-## 📋 Trade History (62 closed | Win rate 31% | Total P&L ₹-4,058.83)
+## 📋 Trade History (63 closed | Win rate 32% | Total P&L ₹-3,835.03)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-10-14 09:01 | 🟢 BUY | INFY | 13 | ₹1093.75 | — |  |
+| 2026-10-14 09:01 | 🔴 SELL | TCS | 6 | ₹2306.60 | ₹+223.80 | signal |
 | 2026-10-13 11:07 | 🟢 BUY | HCLTECH | 10 | ₹1326.00 | — |  |
 | 2026-10-13 11:07 | 🟢 BUY | TCS | 6 | ₹2269.30 | — |  |
 | 2026-10-08 10:56 | 🟢 BUY | ADANIPORTS | 8 | ₹1708.00 | — |  |
@@ -39,8 +41,6 @@
 | 2026-10-01 10:28 | 🔴 SELL | ADANIPORTS | 8 | ₹1737.80 | ₹-47.20 | trailing_stop |
 | 2026-09-29 12:53 | 🟢 BUY | BAJAJ-AUTO | 1 | ₹10811.00 | — |  |
 | 2026-09-29 10:08 | 🔴 SELL | GRASIM | 4 | ₹3100.00 | ₹-363.20 | trailing_stop |
-| 2026-09-28 10:10 | 🟢 BUY | ADANIPORTS | 8 | ₹1743.70 | — |  |
-| 2026-09-28 10:10 | 🔴 SELL | HDFCBANK | 20 | ₹719.05 | ₹-229.00 | trailing_stop |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
