@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-15 09:51 IST
+**Last updated:** 2026-10-15 10:19 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -16,8 +16,8 @@
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| ICICIBANK | 10 | ₹1357.50 | ₹1344.03 | ₹1462.34 | ₹13,575.00 |
-| KOTAKBANK | 33 | ₹435.00 | ₹432.62 | ₹481.04 | ₹14,355.00 |
+| ICICIBANK | 10 | ₹1357.50 | ₹1347.72 | ₹1462.34 | ₹13,575.00 |
+| KOTAKBANK | 33 | ₹435.00 | ₹434.51 | ₹481.04 | ₹14,355.00 |
 | ADANIENT | 5 | ₹2596.00 | ₹2642.86 | ₹3042.31 | ₹12,980.00 |
 | ADANIPORTS | 8 | ₹1708.00 | ₹1710.11 | ₹1925.39 | ₹13,664.00 |
 | HCLTECH | 10 | ₹1326.00 | ₹1328.71 | ₹1528.29 | ₹13,260.00 |
