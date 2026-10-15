@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-15 08:35 IST
+**Last updated:** 2026-10-15 09:10 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,7 +20,7 @@
 | KOTAKBANK | 33 | ₹435.00 | ₹431.55 | ₹481.04 | ₹14,355.00 |
 | ADANIENT | 5 | ₹2596.00 | ₹2642.86 | ₹3042.31 | ₹12,980.00 |
 | ADANIPORTS | 8 | ₹1708.00 | ₹1710.11 | ₹1925.39 | ₹13,664.00 |
-| HCLTECH | 10 | ₹1326.00 | ₹1326.09 | ₹1528.29 | ₹13,260.00 |
+| HCLTECH | 10 | ₹1326.00 | ₹1326.86 | ₹1528.29 | ₹13,260.00 |
 | INFY | 13 | ₹1093.75 | ₹1079.90 | ₹1238.77 | ₹14,218.75 |
 
 ## 📋 Trade History (63 closed | Win rate 32% | Total P&L ₹-3,835.03)
