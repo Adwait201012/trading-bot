@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-16 11:54 IST
+**Last updated:** 2026-10-16 12:22 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | ADANIENT | 5 | ₹2596.00 | ₹2642.86 | ₹3042.31 | ₹12,980.00 |
 | ADANIPORTS | 8 | ₹1708.00 | ₹1710.11 | ₹1925.39 | ₹13,664.00 |
 | HCLTECH | 10 | ₹1326.00 | ₹1338.60 | ₹1528.29 | ₹13,260.00 |
-| EICHERMOT | 2 | ₹7284.50 | ₹6987.30 | ₹8027.51 | ₹14,569.00 |
+| EICHERMOT | 2 | ₹7284.50 | ₹7065.97 | ₹8027.51 | ₹14,569.00 |
 
 ## 📋 Trade History (64 closed | Win rate 33% | Total P&L ₹-2,958.18)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
