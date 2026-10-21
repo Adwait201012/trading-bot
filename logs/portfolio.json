@@ -1,5 +1,5 @@
 {
-  "cash": 14638.817810058594,
+  "cash": 41752.817321777344,
   "peak_value": 100000,
   "positions": {
     "ICICIBANK.NS": {
@@ -18,14 +18,6 @@
       "trailing_stop": 434.70549407958987,
       "time": "2026-10-08 10:56:23.001772"
     },
-    "ADANIENT.NS": {
-      "qty": 5,
-      "avg_price": 2596.0,
-      "stop": 2417.4749830853834,
-      "target": 3042.312542286542,
-      "trailing_stop": 2642.8620947265626,
-      "time": "2026-10-08 10:56:23.033033"
-    },
     "ADANIPORTS.NS": {
       "qty": 8,
       "avg_price": 1708.0,
@@ -39,16 +31,8 @@
       "avg_price": 1326.0,
       "stop": 1245.0849093453405,
       "target": 1528.2877266366486,
-      "trailing_stop": 1338.6,
+      "trailing_stop": 1361.88,
       "time": "2026-10-13 11:07:46.523742"
-    },
-    "EICHERMOT.NS": {
-      "qty": 2,
-      "avg_price": 7284.5,
-      "stop": 6987.2960340868885,
-      "target": 8027.50991478278,
-      "trailing_stop": 7153.265,
-      "time": "2026-10-16 11:54:48.440673"
     }
   },
   "trades": [
@@ -1251,6 +1235,26 @@
       "price": 7284.5,
       "total": 14569.0,
       "time": "2026-10-16 11:54:48.440679"
+    },
+    {
+      "action": "SELL",
+      "symbol": "ADANIENT.NS",
+      "qty": 5,
+      "price": 2582.39990234375,
+      "total": 12911.99951171875,
+      "pnl": -68.0,
+      "reason": "trailing_stop",
+      "time": "2026-10-21 08:53:11.288359"
+    },
+    {
+      "action": "SELL",
+      "symbol": "EICHERMOT.NS",
+      "qty": 2,
+      "price": 7101.0,
+      "total": 14202.0,
+      "pnl": -367.0,
+      "reason": "trailing_stop",
+      "time": "2026-10-21 08:53:11.295240"
     }
   ],
   "created_at": "2026-06-02"
