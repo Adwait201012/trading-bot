@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-22 14:40 IST
+**Last updated:** 2026-10-23 08:50 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,23 +8,27 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹96,606.82 |
-| Cash Available | ₹29,218.32 |
-| Total P&L | 🔴 ₹-3,393.18 (-3.39%) |
-| Drawdown from Peak | 🟡 3.39% |
+| Current Value | ₹96,449.72 |
+| Cash Available | ₹29,505.42 |
+| Total P&L | 🔴 ₹-3,550.28 (-3.55%) |
+| Drawdown from Peak | 🟡 3.55% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
 | ICICIBANK | 10 | ₹1357.50 | ₹1356.55 | ₹1462.34 | ₹13,575.00 |
-| KOTAKBANK | 33 | ₹435.00 | ₹434.71 | ₹481.04 | ₹14,355.00 |
-| ADANIPORTS | 8 | ₹1708.00 | ₹1713.02 | ₹1925.39 | ₹13,664.00 |
-| HCLTECH | 10 | ₹1326.00 | ₹1381.47 | ₹1528.29 | ₹13,260.00 |
-| TCS | 5 | ₹2506.90 | ₹2431.69 | ₹2871.15 | ₹12,534.50 |
+| HCLTECH | 10 | ₹1326.00 | ₹1382.83 | ₹1528.29 | ₹13,260.00 |
+| TCS | 5 | ₹2506.90 | ₹2458.76 | ₹2871.15 | ₹12,534.50 |
+| INFY | 12 | ₹1160.50 | ₹1077.30 | ₹1368.51 | ₹13,926.00 |
+| ADANIPORTS | 8 | ₹1706.10 | ₹1614.67 | ₹1934.69 | ₹13,648.80 |
 
-## 📋 Trade History (66 closed | Win rate 32% | Total P&L ₹-3,393.18)
+## 📋 Trade History (68 closed | Win rate 31% | Total P&L ₹-3,550.28)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-10-23 08:50 | 🟢 BUY | ADANIPORTS | 8 | ₹1706.10 | — |  |
+| 2026-10-23 08:50 | 🟢 BUY | INFY | 12 | ₹1160.50 | — |  |
+| 2026-10-23 08:50 | 🔴 SELL | ADANIPORTS | 8 | ₹1706.10 | ₹-15.20 | trailing_stop |
+| 2026-10-23 08:50 | 🔴 SELL | KOTAKBANK | 33 | ₹430.70 | ₹-141.90 | trailing_stop |
 | 2026-10-22 10:39 | 🟢 BUY | TCS | 5 | ₹2506.90 | — |  |
 | 2026-10-21 08:53 | 🔴 SELL | EICHERMOT | 2 | ₹7101.00 | ₹-367.00 | trailing_stop |
 | 2026-10-21 08:53 | 🔴 SELL | ADANIENT | 5 | ₹2582.40 | ₹-68.00 | trailing_stop |
@@ -36,10 +40,6 @@
 | 2026-10-13 11:07 | 🟢 BUY | TCS | 6 | ₹2269.30 | — |  |
 | 2026-10-08 10:56 | 🟢 BUY | ADANIPORTS | 8 | ₹1708.00 | — |  |
 | 2026-10-08 10:56 | 🟢 BUY | ADANIENT | 5 | ₹2596.00 | — |  |
-| 2026-10-08 10:56 | 🟢 BUY | KOTAKBANK | 33 | ₹435.00 | — |  |
-| 2026-10-08 10:56 | 🔴 SELL | ADANIPORTS | 8 | ₹1708.00 | ₹-528.00 | trailing_stop |
-| 2026-10-07 10:35 | 🟢 BUY | ICICIBANK | 10 | ₹1357.50 | — |  |
-| 2026-10-07 10:35 | 🔴 SELL | KOTAKBANK | 36 | ₹440.00 | ₹+1296.00 | target |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
