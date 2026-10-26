@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-26 09:22 IST
+**Last updated:** 2026-10-26 10:11 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -16,12 +16,12 @@
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| ICICIBANK | 10 | ₹1357.50 | ₹1360.33 | ₹1462.34 | ₹13,575.00 |
+| ICICIBANK | 10 | ₹1357.50 | ₹1360.91 | ₹1462.34 | ₹13,575.00 |
 | HCLTECH | 10 | ₹1326.00 | ₹1382.83 | ₹1528.29 | ₹13,260.00 |
 | TCS | 5 | ₹2506.90 | ₹2460.41 | ₹2871.15 | ₹12,534.50 |
-| INFY | 12 | ₹1160.50 | ₹1125.54 | ₹1368.51 | ₹13,926.00 |
-| ADANIPORTS | 8 | ₹1706.10 | ₹1686.15 | ₹1934.69 | ₹13,648.80 |
-| TECHM | 8 | ₹1789.00 | ₹1736.30 | ₹2054.83 | ₹14,312.00 |
+| INFY | 12 | ₹1160.50 | ₹1131.02 | ₹1368.51 | ₹13,926.00 |
+| ADANIPORTS | 8 | ₹1706.10 | ₹1699.92 | ₹1934.69 | ₹13,648.80 |
+| TECHM | 8 | ₹1789.00 | ₹1741.15 | ₹2054.83 | ₹14,312.00 |
 
 ## 📋 Trade History (68 closed | Win rate 31% | Total P&L ₹-3,550.28)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
