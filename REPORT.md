@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-10-27 09:21 IST
+**Last updated:** 2026-10-27 09:50 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | TCS | 5 | ₹2506.90 | ₹2460.41 | ₹2871.15 | ₹12,534.50 |
 | INFY | 12 | ₹1160.50 | ₹1131.02 | ₹1368.51 | ₹13,926.00 |
 | ADANIPORTS | 8 | ₹1706.10 | ₹1702.25 | ₹1934.69 | ₹13,648.80 |
-| TECHM | 8 | ₹1789.00 | ₹1743.67 | ₹2054.83 | ₹14,312.00 |
+| TECHM | 8 | ₹1789.00 | ₹1748.33 | ₹2054.83 | ₹14,312.00 |
 
 ## 📋 Trade History (68 closed | Win rate 31% | Total P&L ₹-3,550.28)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
