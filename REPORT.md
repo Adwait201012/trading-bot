@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-11-05 11:30 IST
+**Last updated:** 2026-11-05 12:24 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | TECHM | 8 | ₹1789.00 | ₹1768.02 | ₹2054.83 | ₹14,312.00 |
 | KOTAKBANK | 33 | ₹440.00 | ₹452.99 | ₹486.82 | ₹14,520.00 |
 | TCS | 5 | ₹2460.00 | ₹2427.52 | ₹2837.23 | ₹12,300.00 |
-| ICICIBANK | 10 | ₹1500.00 | ₹1439.87 | ₹1650.32 | ₹15,000.00 |
+| ICICIBANK | 10 | ₹1500.00 | ₹1455.00 | ₹1650.32 | ₹15,000.00 |
 
 ## 📋 Trade History (71 closed | Win rate 31% | Total P&L ₹-2,807.98)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
