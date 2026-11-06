@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-11-06 11:30 IST
+**Last updated:** 2026-11-06 12:09 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | KOTAKBANK | 33 | ₹440.00 | ₹465.60 | ₹486.82 | ₹14,520.00 |
 | TCS | 5 | ₹2460.00 | ₹2427.52 | ₹2837.23 | ₹12,300.00 |
 | ICICIBANK | 10 | ₹1500.00 | ₹1524.06 | ₹1650.32 | ₹15,000.00 |
-| HDFCBANK | 19 | ₹788.25 | ₹753.23 | ₹875.81 | ₹14,976.75 |
+| HDFCBANK | 19 | ₹788.25 | ₹764.60 | ₹875.81 | ₹14,976.75 |
 
 ## 📋 Trade History (72 closed | Win rate 32% | Total P&L ₹-963.98)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
