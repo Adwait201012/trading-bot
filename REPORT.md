@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-11-11 11:27 IST
+**Last updated:** 2026-11-11 11:54 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -20,8 +20,8 @@
 | TCS | 5 | ₹2460.00 | ₹2427.52 | ₹2837.23 | ₹12,300.00 |
 | ICICIBANK | 10 | ₹1500.00 | ₹1541.33 | ₹1650.32 | ₹15,000.00 |
 | HDFCBANK | 19 | ₹788.25 | ₹782.40 | ₹875.81 | ₹14,976.75 |
-| AXISBANK | 11 | ₹1336.40 | ₹1275.32 | ₹1489.09 | ₹14,700.40 |
-| SBIN | 14 | ₹1061.20 | ₹1014.96 | ₹1176.81 | ₹14,856.80 |
+| AXISBANK | 11 | ₹1336.40 | ₹1296.31 | ₹1489.09 | ₹14,700.40 |
+| SBIN | 14 | ₹1061.20 | ₹1029.36 | ₹1176.81 | ₹14,856.80 |
 
 ## 📋 Trade History (74 closed | Win rate 34% | Total P&L ₹+1,300.12)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
