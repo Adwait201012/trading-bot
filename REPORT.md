@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-11-12 11:51 IST
+**Last updated:** 2026-11-12 12:47 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | HDFCBANK | 19 | ₹788.25 | ₹787.93 | ₹875.81 | ₹14,976.75 |
 | AXISBANK | 11 | ₹1336.40 | ₹1302.61 | ₹1489.09 | ₹14,700.40 |
 | SBIN | 14 | ₹1061.20 | ₹1053.90 | ₹1176.81 | ₹14,856.80 |
-| WIPRO | 78 | ₹196.20 | ₹186.32 | ₹220.91 | ₹15,303.60 |
+| WIPRO | 78 | ₹196.20 | ₹190.31 | ₹220.91 | ₹15,303.60 |
 
 ## 📋 Trade History (75 closed | Win rate 33% | Total P&L ₹+1,180.12)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
