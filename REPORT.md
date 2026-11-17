@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-11-16 19:51 IST
+**Last updated:** 2026-11-17 12:28 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -8,24 +8,26 @@
 | Metric | Value |
 |---|---|
 | Starting Capital | ₹100,000.00 |
-| Current Value | ₹100,917.62 |
-| Cash Available | ₹10,935.02 |
-| Total P&L | 🟢 ₹+917.62 (+0.92%) |
-| Drawdown from Peak | 🟢 -0.92% |
+| Current Value | ₹100,425.44 |
+| Cash Available | ₹11,172.14 |
+| Total P&L | 🟢 ₹+425.44 (+0.43%) |
+| Drawdown from Peak | 🟢 -0.43% |
 
 ## 📂 Open Positions
 | Stock | Qty | Entry | Stop | Target | Est. Value |
 |---|---|---|---|---|---|
-| ICICIBANK | 10 | ₹1500.00 | ₹1542.30 | ₹1650.32 | ₹15,000.00 |
+| ICICIBANK | 10 | ₹1500.00 | ₹1550.74 | ₹1650.32 | ₹15,000.00 |
 | HDFCBANK | 19 | ₹788.25 | ₹792.00 | ₹875.81 | ₹14,976.75 |
-| AXISBANK | 11 | ₹1336.40 | ₹1302.61 | ₹1489.09 | ₹14,700.40 |
-| SBIN | 14 | ₹1061.20 | ₹1057.79 | ₹1176.81 | ₹14,856.80 |
-| WIPRO | 78 | ₹196.20 | ₹190.31 | ₹220.91 | ₹15,303.60 |
-| KOTAKBANK | 31 | ₹488.55 | ₹479.37 | ₹539.65 | ₹15,145.05 |
+| AXISBANK | 11 | ₹1336.40 | ₹1327.93 | ₹1489.09 | ₹14,700.40 |
+| SBIN | 14 | ₹1061.20 | ₹1075.34 | ₹1176.81 | ₹14,856.80 |
+| KOTAKBANK | 31 | ₹488.55 | ₹482.33 | ₹539.65 | ₹15,145.05 |
+| BAJFINANCE | 13 | ₹1121.10 | ₹1061.19 | ₹1270.86 | ₹14,574.30 |
 
-## 📋 Trade History (76 closed | Win rate 33% | Total P&L ₹+917.62)
+## 📋 Trade History (77 closed | Win rate 32% | Total P&L ₹+425.44)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
 |---|---|---|---|---|---|---|
+| 2026-11-17 12:28 | 🟢 BUY | BAJFINANCE | 13 | ₹1121.10 | — |  |
+| 2026-11-17 12:28 | 🔴 SELL | WIPRO | 78 | ₹189.89 | ₹-492.18 | trailing_stop |
 | 2026-11-13 11:35 | 🟢 BUY | KOTAKBANK | 31 | ₹488.55 | — |  |
 | 2026-11-13 11:35 | 🔴 SELL | TCS | 5 | ₹2407.50 | ₹-262.50 | trailing_stop |
 | 2026-11-12 11:51 | 🟢 BUY | WIPRO | 78 | ₹196.20 | — |  |
@@ -39,8 +41,6 @@
 | 2026-11-05 11:30 | 🟢 BUY | ICICIBANK | 10 | ₹1500.00 | — |  |
 | 2026-11-05 11:30 | 🔴 SELL | ICICIBANK | 10 | ₹1500.00 | ₹+1425.00 | target |
 | 2026-10-28 10:01 | 🟢 BUY | TCS | 5 | ₹2460.00 | — |  |
-| 2026-10-28 10:01 | 🟢 BUY | KOTAKBANK | 33 | ₹440.00 | — |  |
-| 2026-10-28 10:01 | 🔴 SELL | INFY | 12 | ₹1123.15 | ₹-448.20 | trailing_stop |
 
 ---
 **Strategy:** Supertrend + RSI + MACD + ATR trailing stops + Support/Resistance
