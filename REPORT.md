@@ -1,6 +1,6 @@
 # 📈 Trading Bot — Live Portfolio Report
 
-**Last updated:** 2026-11-26 18:37 IST
+**Last updated:** 2026-11-26 18:59 IST
 
 > ⚠️ **PAPER TRADING ONLY — No real money at risk**
 
@@ -21,7 +21,7 @@
 | AXISBANK | 11 | ₹1388.60 | ₹1375.56 | ₹1558.95 | ₹15,274.60 |
 | BAJAJFINSV | 8 | ₹1880.10 | ₹1867.25 | ₹2099.18 | ₹15,040.80 |
 | BAJFINANCE | 14 | ₹1095.50 | ₹1097.41 | ₹1249.43 | ₹15,337.00 |
-| TCS | 6 | ₹2517.30 | ₹2376.72 | ₹2868.75 | ₹15,103.80 |
+| TCS | 6 | ₹2517.30 | ₹2441.78 | ₹2868.75 | ₹15,103.80 |
 
 ## 📋 Trade History (85 closed | Win rate 34% | Total P&L ₹+2,427.09)
 | Time | Action | Stock | Qty | Price | P&L | Reason |
